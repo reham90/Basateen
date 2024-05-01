@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-padding-top: 161px;
+padding-top: 153px;
 }
 
 
@@ -174,8 +174,8 @@ html[dir="ltr"] .progress-bar {
 .menu-item-has-children a::after {
   content: "";
   font-family: "Line Awesome Free";
-  font-size: 12px;
-  margin-inline-start: 3px;
+  font-size: 10px;
+ 
   font-weight: 700;
 }
 .sub-menu a::after {
@@ -200,7 +200,7 @@ header {
 }
 .navigation-bar{
   background-color: var(--main-color);
-  padding: 18px 30px 20px;
+  padding: 15px 30px;
   
 }
 
@@ -231,9 +231,12 @@ header {
 }
 .notification-icon{
   position: relative;
+  width: 40px;
+  height: 40px;
+  margin-inline-end: 10px;
 }
 .notification-no{
-  font-size: 12px;
+  font-size: 9px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -244,7 +247,9 @@ header {
   background-color: var(--main-hover);
   width: 16px;
 height: 16px;
+padding: 3px;
 border-radius: 50%;
+inset-inline-start: 0;
 }
 .top-header-list{
   list-style: none;
@@ -302,7 +307,7 @@ height: 40px;
   text-decoration: none;
 }
 .sub-menu li a{
-  color: var(--main-color) !important;
+  color: #000 !important;
   transition: 0.5s;
 }
 .big-menu li:not(:first-child) {
@@ -512,7 +517,7 @@ width: 0;
 }
 .nav-header .img-logo img {
   width: 99px;
-  height: 71px;
+  
   transition: all 0.3s ease-in-out;
 }
 
@@ -622,17 +627,20 @@ html[dir="rtl"] .search-button{
 }
 @media (max-width: 991px) {
   body {
-    padding-top: 142px;
+    padding-top: 125px;
     position: relative;
   }
- 
+  .notification-icon{
+    width: 30px;
+    height: 30px;
+  }
   .top-header {
     padding: 0 20px;
-    min-height: 143px;
+   min-height: 122px;
     position: relative;
 }
 .nav-header .img-logo img {
-  max-width: 99px;
+  max-width: 70px;
 }
 .nav-header {
   padding: 10px 0;
@@ -641,7 +649,7 @@ html[dir="rtl"] .search-button{
 }
 .search-section {
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -683,7 +691,7 @@ html[dir="rtl"] .search-button {
   display: flex;
   color: var(--main-color);
   transition: all 0.3s ease-in-out;
-  top: 36px;
+  top: 25px;
   inset-inline-end: 20px;
 }
 
@@ -733,7 +741,10 @@ html[dir="rtl"] .search-button {
 }
 .sub-menu li a{
   font-size: 16px !important;
-  
+  font-family: "SST-ARABIC-ROMAN" !important;
+}
+.counter-div{
+  width: auto !important;
 }
 .navgition .language-anchor{
   position: absolute;
@@ -807,7 +818,12 @@ html[dir="rtl"] .search-button {
   object-fit: fill;
   max-height: 550px;
 }
-
+.footer-logo-col{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .main-slider .swiper-btn {
   position: absolute;
@@ -927,6 +943,7 @@ margin-bottom: 15px;
   display: flex;
   justify-content: center;
   transition: 0.5s;
+  text-transform: capitalize;
 }
 .cat-block{
   transition: 0.5s;
@@ -1087,6 +1104,7 @@ margin-bottom: 15px;
   text-align: center;
   justify-content: center;
   margin: 0 0 31px;
+  text-transform: capitalize;
 }
 .offers-slider{
   position: relative;
@@ -1114,25 +1132,25 @@ background-color: #fff;
   transform: scale(1.05);
 }
 .discount{
-  font-size: 9px;
+  font-size: 10px;
   color: #E13612;
   font-family: "SST-ARABIC-BOLD";
   display: flex;
+  padding: 15px;
   align-items: center;
   justify-content: center;
   background-color: #FCEAE6;
   border-radius: 3px;
   width: 27px;
 height: 26px;
+line-height: 1;
 position: absolute;
 top:4px;
 text-align: center;
 inset-inline-start: 6px;
 z-index: 9;
 }
-html[dir="ltr"] .discount{
-  width: 52px;
-}
+
 .favourite-btn{
   padding: 0;
   border: 0;
@@ -1219,8 +1237,13 @@ z-index: 9;
   height: 22px;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.5s;
   margin-inline-start: 8px;
   
+}
+.plus:hover{
+  background-color: var(--main-hover);
+  color: #fff;
 }
 .cart-input{
   background-color: transparent;
@@ -1244,6 +1267,11 @@ z-index: 9;
   border-radius: 50%;
   cursor: pointer;
   margin-inline-end: 8px;
+  transition: 0.5s;
+}
+.minus:hover{
+  background-color: var(--main-hover);
+  color: #fff;
 }
 .cart-counter-section{
   display: flex;
@@ -1394,6 +1422,16 @@ font-size: 14px;
 .brands-section{
   padding: 0px 0 80px;
 }
+.brand-figure{
+  width: 100%;
+    max-width: 120px;
+    height: 100%;
+    max-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
 .brands-slider{
   position: relative;
 }
@@ -1519,7 +1557,7 @@ footer {
   white-space: nowrap;
   font-size: 14px;
   color: #fff;
-  margin-bottom: 29px;
+  margin-bottom: 12px;
   margin-top: 0;
   text-align: start;
   font-family: "SST-ARABIC-BOLD";
@@ -1541,7 +1579,7 @@ footer {
 .nav-foot-link {
   color: #B4EBB9;
   font-size: 14px;
-  
+  text-transform: capitalize;
   display: inline-flex;
   text-decoration: none !important;
   transition: all 0.3s ease-in-out;
@@ -1588,11 +1626,19 @@ footer {
 .contact-list li:not(:last-child){
   margin-bottom: 11px;
 }
-.contact-list li{
+.contact-list li {
   display: flex;
   align-items: center;
+}
+.contact-list li a{
+ 
   color: #B4EBB9;
   font-size: 14px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.contact-list li a:hover{
+  color: #fff;
 }
 .contact-icon{
   font-size: 18px;
@@ -1627,11 +1673,12 @@ footer {
   text-align: center;
 }
 .payment-list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ 
   display: flex;
- align-items: baseline;
+  justify-content: center;
+}
+.payment-list img{
+  max-width: 80%;
 }
 
 .tasawk-logo{
@@ -1879,9 +1926,9 @@ ol.breadcrumb {
 
   .big-menu li a {
     display: flex;
-   color: var(--main-color);
+   color: #000;
     align-items: center;
-font-family: "SST-ARABIC-MEDIUM";
+font-family: "SST-ARABIC-BOLD";
     font-size: 18px;
     position: relative;
     width: 100%;
@@ -2004,7 +2051,9 @@ font-family: "SST-ARABIC-MEDIUM";
   .breadcrumb-sec .page-head{
     font-size: 24px;
   }
- 
+ .footer-logo-col{
+  align-items: flex-start;
+ }
  
 
  
