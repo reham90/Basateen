@@ -1811,7 +1811,10 @@ ol.breadcrumb {
   .social-list{
     margin-bottom: 20px;
   }
-
+.payment-list{
+  order: -1;
+  margin-bottom: 10px;
+}
  
  
   
@@ -1988,12 +1991,10 @@ font-family: "SST-ARABIC-MEDIUM";
 }
 
 @media only screen and (max-width: 994px)  and (min-width: 768px)  {
-  .footer-first-record{
-    /* grid-template-columns: repeat(2,1fr); */
-    align-items: baseline;
-  }
-  .clearfix{
-    width: 70%;
+ 
+  .payment-list{
+    order: 0;
+    margin-bottom: 0;
   }
   .breadcrumb-sec .page-head{
     font-size: 24px;
