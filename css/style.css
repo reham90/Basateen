@@ -818,12 +818,7 @@ html[dir="rtl"] .search-button {
   object-fit: fill;
   max-height: 550px;
 }
-.footer-logo-col{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .main-slider .swiper-btn {
   position: absolute;
@@ -1837,6 +1832,12 @@ ol.breadcrumb li:not(.active):after {
 }
 ol.breadcrumb {
   display: none;
+}
+.footer-logo-col{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 }
