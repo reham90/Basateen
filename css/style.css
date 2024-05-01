@@ -275,8 +275,9 @@ border-radius: 50%;
   transition: 0.5s;
 }
 .top-header-list li a:hover{
-  color: var(--main-color);
+  color: var(--main-hover);
 }
+
 .top-header-list-icon{
   font-size: 24px;
   color: #000;
@@ -289,8 +290,12 @@ height: 40px;
   background-color: #EEEEEE;
   border-radius: 50%;
   margin-inline-end: 10px;
+  transition: 0.5s;
 }
-
+.top-header-list li a:hover .top-header-list-icon{
+  background-color: var(--main-color);
+  color: #fff;
+}
 .big-menu li a:hover {
   color: #fff;
   opacity: 0.7;
