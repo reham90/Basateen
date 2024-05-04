@@ -7,6 +7,13 @@ window.onload = function () {
 };
 $(document).ready(function () {
   new WOW().init();
+//////////////////////////////////////// password verefication  /////////////////////////////
+$(".inputs").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $(this).next('.inputs').focus();
+  }
+});
+
 
   //phone size menu onclick
   if ($(window).width() <= 991) {
@@ -257,5 +264,8 @@ var screen = new Swiper(".brands-slider .swiper-container", {
     },
   },
 });
+
+
+
 });
 

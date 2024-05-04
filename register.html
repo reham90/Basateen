@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>سلة البساتين /   إنشاء حساب جديد</title>
+    <link rel="icon" href="images/fav.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="p-0">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- register -->
+    
+    <div class="container">
+      <div class="register-top-header">
+        <div class="img-logo">
+          <a href="#"><img src="images/logo.png" class="img-responsive" /></a>
+        </div> 
+        <p class="form-text m-0">
+           لديك حساب؟
+          <a href="login.html" class="register-link">
+           سجل دخول
+          </a>
+         </p>
+    </div>
+
+    <div class="register-content">
+      <h2 class="form-title mb-30">
+       إنشاء حساب جديد 
+       </h2>
+       <form class="register-form">
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+              اسم المستخدم
+            </label>
+            <input type="text" class="form-input-1 m-0" placeholder="  ">
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+             رقم الجوال
+            </label>
+            <div class="form-input-div">
+              <input type="number" class="form-input-1" placeholder="  5xxxxxxxxxx">
+            
+              <span class="flag-section">
+                +966
+                <img class="flag" src="images/flag.png" alt="flag">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+             البريد الإلكتروني
+            </label>
+            <input type="email" class="form-input-1 m-0" placeholder="  ">
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+            الجنس
+            </label>
+            <div class="form-input-div">
+             <select class="form-input-1">
+              <option> اختر من القائمة </option>
+              <option> ذكر   </option>
+              <option> أنثى </option>
+              </select>
+            
+              
+              <i class="las la-angle-down register-form-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+            المدينة
+            </label>
+            <div class="form-input-div">
+              <select class="form-input-1">
+               <option> اختر من القائمة </option>
+               <option> اختر من القائمة </option>
+               <option> اختر من القائمة </option>
+               </select>
+             
+               
+               <i class="las la-angle-down register-form-icon"></i>
+             </div>
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+           الحي
+            </label>
+            <div class="form-input-div">
+             <select class="form-input-1">
+              <option> اختر من القائمة </option>
+               <option> اختر من القائمة </option>
+               <option> اختر من القائمة </option>
+              </select>
+            
+              
+              <i class="las la-angle-down register-form-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+            كلمة المرور
+            </label>
+            <div class="form-input-div">
+              <input type="password" class="form-input-1 m-0" id="pass" placeholder="">
+             
+              <a onclick="togglePassword()">
+                <i class="las la-eye-slash  register-form-icon" id="eye-slash" ></i>
+                <i class=" las la-eye register-form-icon" id="eye" ></i>
+               
+                </a>
+            </div>
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+          تأكيد كلمة المرور
+            </label>
+            <div class="form-input-div mb-20">
+              <input type="password" class="form-input-1 m-0" id="pass-2" placeholder=" ">
+             
+              <a onclick="togglePassword2()">
+                <i class="las la-eye-slash  register-form-icon" id="eye-slash-2" ></i>
+                <i class=" las la-eye register-form-icon" id="eye" ></i>
+               
+                </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="register-verefication.html" class="submit-btn m-auto" >
+         تسجيل
+        </a> 
+
+       </form>
+       <p class="form-text mb-87">
+       تسجيلك في موقع سلة البساتين يعني موافقتك على 
+       
+        <button type="button" class="btn btn-primary register-link" data-toggle="modal" data-target="#exampleModal">
+          الشروط والأحكام
+        </button>
+        <!-- Modal -->
+<div class="modal fade terms-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog terms-modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header terms-modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="las la-times close-modal-icon"></i>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body terms-modal-body">
+       <h2 class="terms-title">
+        الشروط والأحكام
+       </h2>
+       <p class="terms-text">
+        الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة
+
+       </p>
+       <p class="terms-text">
+        الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة
+        الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة
+      </p>
+      <p class="terms-text">
+        الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة
+        الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة
+      </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+       </p>
+
+       <span class="copy-right">
+        © سلة البساتين 2024
+      </span>
+
+    </div>
+      
+   </div>
+    <!-- register -->
+
+    <script>
+      function togglePassword() {
+          
+          var x = document.getElementById("pass");
+          var eyeSlash = document.getElementById("eye-slash");
+          var eye = document.getElementById("eye");
+          if (x.type === "password") {
+            x.type = "text";
+            eyeSlash.style.display="none";
+            eye.style.display="block";
+      
+          } else {
+            x.type = "password";
+            eyeSlash.style.display="block";
+            eye.style.display="none";
+          }
+        }
+
+        function togglePassword2() {
+          
+          var x = document.getElementById("pass-2");
+          var eyeSlash = document.getElementById("eye-slash-2");
+          var eye = document.getElementById("eye-2");
+          if (x.type === "password") {
+            x.type = "text";
+            eyeSlash.style.display="none";
+            eye.style.display="block";
+      
+          } else {
+            x.type = "password";
+            eyeSlash.style.display="block";
+            eye.style.display="none";
+          }
+        }
+
+     </script>
+   
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+   
+    <script src="js/script.js"></script>
+  </body>
+</html>

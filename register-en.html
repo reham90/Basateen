@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sallat Albasateen / register</title>
+    <link rel="icon" href="images/fav.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+   
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="p-0">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+
+     <!-- register -->
+    
+     <div class="container">
+      <div class="register-top-header">
+        <div class="img-logo">
+          <a href="#"><img src="images/logo.png" class="img-responsive" /></a>
+        </div> 
+        <p class="form-text m-0">
+          Have account?
+          <a href="login.html" class="register-link">
+           sign in
+          </a>
+         </p>
+    </div>
+
+    <div class="register-content">
+      <h2 class="form-title mb-30">
+      register
+       </h2>
+       <form class="register-form">
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+             user name
+            </label>
+            <input type="text" class="form-input-1 m-0" placeholder="  ">
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+            mobile number
+            </label>
+            <div class="form-input-div">
+              <input type="number" class="form-input-1" placeholder="  5xxxxxxxxxx">
+            
+              <span class="flag-section">
+                +966
+                <img class="flag" src="images/flag.png" alt="flag">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+             email
+            </label>
+            <input type="email" class="form-input-1 m-0" placeholder="  ">
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+            gender
+            </label>
+            <div class="form-input-div">
+             <select class="form-input-1">
+              <option> choose from list </option>
+              <option> male   </option>
+              <option> female </option>
+              </select>
+            
+              
+              <i class="las la-angle-down register-form-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+           city
+            </label>
+            <div class="form-input-div">
+              <select class="form-input-1">
+                <option> choose from list </option>
+                <option> choose from list </option>
+                <option> choose from list </option>
+               </select>
+             
+               
+               <i class="las la-angle-down register-form-icon"></i>
+             </div>
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+              District
+            </label>
+            <div class="form-input-div">
+             <select class="form-input-1">
+              <option> choose from list </option>
+              <option> choose from list </option>
+              <option> choose from list </option>
+              </select>
+            
+              
+              <i class="las la-angle-down register-form-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-record">
+          <div class="input-block">
+            <label class="register-form-label">
+          password
+            </label>
+            <div class="form-input-div">
+              <input type="password" class="form-input-1 m-0" id="pass" placeholder="">
+             
+              <a onclick="togglePassword()">
+                <i class="las la-eye-slash  register-form-icon" id="eye-slash" ></i>
+                <i class=" las la-eye register-form-icon" id="eye" ></i>
+               
+                </a>
+            </div>
+          </div>
+          <div class="input-block">
+            <label class="register-form-label">
+         confirm password
+            </label>
+            <div class="form-input-div mb-20">
+              <input type="password" class="form-input-1 m-0" id="pass-2" placeholder=" ">
+             
+              <a onclick="togglePassword2()">
+                <i class="las la-eye-slash  register-form-icon" id="eye-slash-2" ></i>
+                <i class=" las la-eye register-form-icon" id="eye" ></i>
+               
+                </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="register-verefication-en.html" class="submit-btn m-auto" >
+        register
+        </a> 
+
+       </form>
+       <p class="form-text mb-87">
+        Your registration on the Basat Al-Basateen website means your agreement to
+       
+        <button type="button" class="btn btn-primary register-link" data-toggle="modal" data-target="#exampleModal">
+        Terms & Conditions
+        </button>
+        <!-- Modal -->
+<div class="modal fade terms-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog terms-modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header terms-modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="las la-times close-modal-icon"></i>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body terms-modal-body">
+       <h2 class="terms-title">
+        Terms & Conditions
+       </h2>
+       <p class="terms-text">
+        The majority have been modified in some way by introducing anecdotes or random words into the text. If you want to use a passage of Lorem Ipsum, you need to first check that there are no embarrassing or inappropriate words or phrases hidden in it. While all Lorem Ipsum generators on the Internet repeat passages of the same Lorem Ipsum text as many times as necessary
+       </p>
+       <p class="terms-text">
+        The majority have been modified in some way by introducing anecdotes or random words into the text. If you want to use a passage of Lorem Ipsum, you need to first check that there are no embarrassing or inappropriate words or phrases hidden in it. While all Lorem Ipsum generators on the Internet repeat passages of the same Lorem Ipsum text as many times as necessary
+
+            </p>
+      <p class="terms-text">
+        The majority have been modified in some way by introducing anecdotes or random words into the text. If you want to use a passage of Lorem Ipsum, you need to first check that there are no embarrassing or inappropriate words or phrases hidden in it. While all Lorem Ipsum generators on the Internet repeat passages of the same Lorem Ipsum text as many times as necessary
+
+            </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+       </p>
+
+       <span class="copy-right">
+        © Sallat Albasateen 2024
+      </span>
+
+    </div>
+      
+   </div>
+    <!-- register -->
+
+    <script>
+      function togglePassword() {
+          
+          var x = document.getElementById("pass");
+          var eyeSlash = document.getElementById("eye-slash");
+          var eye = document.getElementById("eye");
+          if (x.type === "password") {
+            x.type = "text";
+            eyeSlash.style.display="none";
+            eye.style.display="block";
+      
+          } else {
+            x.type = "password";
+            eyeSlash.style.display="block";
+            eye.style.display="none";
+          }
+        }
+
+        function togglePassword2() {
+          
+          var x = document.getElementById("pass-2");
+          var eyeSlash = document.getElementById("eye-slash-2");
+          var eye = document.getElementById("eye-2");
+          if (x.type === "password") {
+            x.type = "text";
+            eyeSlash.style.display="none";
+            eye.style.display="block";
+      
+          } else {
+            x.type = "password";
+            eyeSlash.style.display="block";
+            eye.style.display="none";
+          }
+        }
+
+     </script>
+   
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+   
+    <script src="js/script.js"></script>
+  </body>
+</html>
