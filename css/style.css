@@ -2847,6 +2847,20 @@ border-radius: 31px;
 
 /*                       category page                             */
 
+/*                     offers page                                  */
+.offers-grid{
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 31px 25px;
+ 
+}
+.offers-grid .offer-block{
+  width: 168px;
+}
+.mb-80{
+  margin-bottom: 80px;
+}
+/*                     offers page                                   */
+
 
 
 /*                                    media query                                    */
@@ -3151,7 +3165,10 @@ font-family: "SST-ARABIC-BOLD";
 .products-grid-content{
   grid-template-columns: repeat(3,1fr);
 }
-
+.offers-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+}
 
 }
 
