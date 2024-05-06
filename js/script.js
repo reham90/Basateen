@@ -2695,6 +2695,11 @@ var screen = new Swiper(".categories-slider .swiper-container", {
   },
 });
 
+
+//////////////////////////// delete product from cart ////////////////////////////////
+$('.delete-product').on('click', function(){
+  $(this).closest(".cart-block").remove();
+});
 //////////////////////////////// add to cart counter  /////////////////////////////////////////
 
 $('.minus').click(function () {
