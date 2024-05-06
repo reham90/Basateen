@@ -2663,6 +2663,38 @@ var screen = new Swiper(".categories-slider .swiper-container", {
   },
 });
 
+ ///////// **similars-section** /////////
+ var screen2 = new Swiper(".similars-slider .swiper-container", {
+  loop: true,
+  autoplay: true,
+  pagination: {
+    el: ".similars-slider .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".similars-slider .swiper-btn-next",
+    prevEl: ".similars-slider .swiper-btn-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    767: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 26,
+    },
+    1199: {
+      slidesPerView: 6,
+      spaceBetween: 26,
+    },
+  },
+});
+
 //////////////////////////////// add to cart counter  /////////////////////////////////////////
 
 $('.minus').click(function () {
