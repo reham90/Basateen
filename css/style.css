@@ -3567,6 +3567,43 @@ transition: 0.5s;
 
 /*                            checkout page                           */
 
+/*                         order success page                       */
+.order-success{
+  padding: 60px 0 90px;
+}
+.order-no{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.order-no-answer{
+  color: var(--main-hover);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 19px;
+  font-size: 20px;
+  font-family: "SST-ARABIC-MEDIUM";
+}
+.order-success .pay-btn{
+  margin-inline-end: 10px ;
+}
+.order-success .continue-btn{
+  margin-inline-end: 0;
+}
+.order-success .cart-btns{
+  margin-top: 0;
+}
+.order-success .cart-btn{
+  width: 179px;
+height: 48px;
+font-size: 16px;
+}
+/*                           order success page                               */
+
 
 
 /*                                    media query                                    */
@@ -3823,11 +3860,18 @@ font-family: "SST-ARABIC-BOLD";
   flex-wrap: wrap;
 }
 .cart-btn{
-  width: 100%;
+  width: 100% !important;
 }
 .continue-btn{
   margin-inline-end: 0;
   margin-bottom: 15px;
+}
+.order-success .pay-btn{
+  margin-inline-end: 0;
+  margin-bottom: 15px;
+}
+.order-success .cart-btns{
+  width: 100%;
 }
   /*                    menu in phone size                      */
 }
