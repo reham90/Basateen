@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>سلة البساتين /  سلة الشراء</title>
+    <title>سلة البساتين /   ملخص الطلب والدفع </title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -152,7 +152,7 @@
                 </li>
               </ul> -->
               <!-- list for guest-->
-              <a href="cart-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
+              <a href="checkout-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
            </div>
            </div>
            <!-- end top header-->
@@ -526,7 +526,7 @@
 
 
 </li>
-<a href="cart-en.html" class="language-anchor hidden-lg hidden-md">English</a>
+<a href="checkout-en.html" class="language-anchor hidden-lg hidden-md">English</a>
 
               </ul>
              
@@ -552,7 +552,7 @@
             </li>
           
             <li class="active item-23">
-              <span class="bread-current"> سلة الشراء </span>
+              <span class="bread-current">  ملخص الطلب والدفع </span>
             </li>
           </ol>
         </div>
@@ -560,133 +560,19 @@
      
       <!-- end breadcrumb -->
 
-      <!-- cart-content -->
+      <!-- checkout-content -->
       <div class="container">
         <div class="cart-content">
-          <div class="address-section">
+          <div class="checkout-address">
+          <div class="address-section mb-10">
             <h2 class="address-title">
-              عنوان التوصيل
+              نوع التوصيل
             </h2>
-            <ul class="nav nav-tabs address-tabs">
-              <li class="active"><a data-toggle="tab" href="#tab1">
-                <i class="las la-plus"></i>
-                إضافة عنوان جديد
-              </a></li>
-              <li><a data-toggle="tab" href="#tab2">
-                <i class="las la-address-book"></i>
-                اختيار من دفتر العناوين
-              </a></li>
-             
-            </ul>
+           
       
-            <div class="tab-content address-content">
-              <div id="tab1" class="tab-pane fade in active">
-               <div class="form-record">
-                 <div class="input-block">
-                  <label class="address-label">
-                    اسم العنوان
-                  </label>
-                  <input type="text" class="form-input-1">
-                 </div>
-
-                 <div class="input-block">
-                  <label class="address-label">
-                    اسم المستلم
-                  </label>
-                  <input type="text" class="form-input-1">
-                 </div>
-
-               </div>
-
-               <div class="form-record">
-                <div class="input-block">
-                 <label class="address-label">
-                  المدينة
-                 </label>
-                 <div class="form-input-div">
-                  <select class="form-input-1">
-                   <option> اختر من القائمة </option>
-                    <option> اختر من القائمة </option>
-                    <option> اختر من القائمة </option>
-                   </select>
-                 
-                   
-                   <i class="las la-angle-down register-form-icon"></i>
-                 </div>
-                </div>
-
-                <div class="input-block">
-                 <label class="address-label">
-                  الحي
-                 </label>
-                 <div class="form-input-div">
-                  <select class="form-input-1">
-                   <option> اختر من القائمة </option>
-                    <option> اختر من القائمة </option>
-                    <option> اختر من القائمة </option>
-                   </select>
-                 
-                   
-                   <i class="las la-angle-down register-form-icon"></i>
-                 </div>
-                </div>
-
-              </div>
-              <div class="form-record">
-                <div class="input-block">
-                 <label class="address-label">
-                   وصف العنوان
-                 </label>
-                 <input type="text" class="form-input-1">
-                </div>
-
-                <div class="input-block">
-                 <label class="address-label">
-                  رقم الجوال
-                 </label>
-                 <div class="form-input-div">
-                  <input type="number" class="form-input-1" placeholder="  5xxxxxxxxxx">
-                
-                  <span class="flag-section">
-                    +966
-                    <img class="flag" src="images/flag.png" alt="flag">
-                  </span>
-                </div>
-                </div>
-
-              </div>
-
-              <div class="form-record">
-                <div class="input-block">
-                 <label class="address-label">
-                  الموقع على الخريطة
-                 </label>
-                 <div class="form-input-div">
-                  <input type="text" class="form-input-1" id="pass" placeholder="  اضغط لتحديد الموقع">
-                 
-                  <i class="las la-map password-icon"></i>
-                </div>
-                </div>
-
-               
-
-              </div>
-
-              </div>
-              <div id="tab2" class="tab-pane fade">
-                <div class="address-block">
-                  <label>
-                     <input type="radio" class="address-type-radio" name="payment type">
-                    
-                   
-                     <span class="checkmark-2"></span>
-                   </label>
-                   <span class="address-type">
-                   العمل
-                   </span>
-                  
-               </div>
-               <div class="address-block">
+            <div class=" address-content">
+             
+              <div class="address-block">
                 <label>
                    <input type="radio" class="address-type-radio" name="payment type">
                   
@@ -694,99 +580,122 @@
                    <span class="checkmark-2"></span>
                  </label>
                  <span class="address-type">
-                المنزل
+                 العمل
                  </span>
                 
              </div>
-              </div>
+             <div class="address-block">
+              <label>
+                 <input type="radio" class="address-type-radio" name="payment type">
+                
+               
+                 <span class="checkmark-2"></span>
+               </label>
+               <span class="address-type">
+              المنزل
+               </span>
+              
+           </div>
+
+           <h3 class="checkout-label">
+            آخر موعد لاستلام الطلب
+           </h3>
+           <p class="checkout-answer">
+            اليوم - 20:00 - 10/11/2023
+           </p>
+           <span class="checkout-note">
+            في حالة الطلب بعد الموعد يتم الاستلام في اليوم التالي
+           </span>
+           <h3 class="checkout-label">
+            المدة المتوقعة للتوصيل
+           </h3>
+           <p class="checkout-answer">
+           20 - 30 دقيقة
+           </p>
              
             </div>
+            
+          </div>
+          <div class="address-section mb-10">
+            <h2 class="address-title">
+             كوبون الخصم
+            </h2>
+            <div class="discount-input-block">
+              <input type="text" class="form-input-1 white-bg w-100" placeholder=" ادخل كود الخصم ">
+              <button class="apply-btn">
+                تطبيق
+              </button>
+            </div>
+          </div>
+          <div class="address-section mb-10">
+            <h2 class="address-title">
+            رصيد المحفظة الحالي
+            <span class="price">
+              10.00 ر.س
+            </span>
+            </h2>
+            <div class="discount-input-block">
+              <input type="text" class="form-input-1 white-bg w-100" placeholder="  ادخل القيمة المراد سحبها من المحفظة ">
+              <button class="apply-btn">
+                تطبيق
+              </button>
+            </div>
+          </div>
+          <div class="address-section ">
+            <h2 class="address-title">
+            طريقة الدفع
+            </h2>
+            <div class="address-block">
+              <label>
+                 <input type="radio" class="address-type-radio" name="payment type-2">
+                
+               
+                 <span class="checkmark-2"></span>
+               </label>
+               <span class="address-type">
+              فيزا / ماستركارد
+               </span>
+              
+           </div>
+           <div class="address-block">
+            <label>
+               <input type="radio" class="address-type-radio" name="payment type-2">
+              
+             
+               <span class="checkmark-2"></span>
+             </label>
+             <span class="address-type">
+           مدى
+             </span>
+            
+         </div>
+         <div class="address-block">
+          <label>
+             <input type="radio" class="address-type-radio" name="payment type-2">
+            
+           
+             <span class="checkmark-2"></span>
+           </label>
+           <span class="address-type">
+        الدفع عند الإستلام
+           </span>
+          
+       </div>
+          </div>
           </div>
 
-          <div class="cart-section">
-            <h2 class="cart-title">
-              سلة الشراء
+          <div class="cart-section w-100">
+            <h2 class="cart-title bb mb-0">
+             الإجمالي
             </h2>
-            <div class="cart-block">
-              <div class="cart-pro-img">
-                <img class="img-responsive" src="images/products/01.png" alt="product img">
-              </div>
-              <div class="cart-pro-details">
-                <div class="pro-name-bar">
-                  <a class="product-name" href="#"
-                  >فونتي خبز تورتيلا 6 حبات - 250 جرام  
-                </a>
-                <button class="delete-product">
-                  <i class="las la-trash"></i>
-                </button>
-                </div>
-               <span class="cart-det">
-                الكمية المتبقية : 100
-               </span>
-               <span class="cart-det">
-               إمكانية الاسترجاع : لا
-               </span>
-               <div class="cart-no-div">
-                <div class="counter-div w-103">
-                  <span class="plus">
-                    <i class="las la-plus"></i>
-                  </span>
-                  <input class="cart-input" type="text" value="1" disabled/>
-                  <span class="minus">
-                    <i class="las la-minus"></i>
-                  </span>
-                  
-                 
-                 </div>
-                 <span class="price">
-                  7.00 ر.س
-                </span>
-               </div>
-              </div>
-            </div>
+           
 
-            <div class="cart-block">
-              <div class="cart-pro-img">
-                <img class="img-responsive" src="images/products/01.png" alt="product img">
-              </div>
-              <div class="cart-pro-details">
-                <div class="pro-name-bar">
-                  <a class="product-name" href="#"
-                  >فونتي خبز تورتيلا 6 حبات - 250 جرام  
-                </a>
-                <button class="delete-product">
-                  <i class="las la-trash"></i>
-                </button>
-                </div>
-               <span class="cart-det">
-                الكمية المتبقية : 100
-               </span>
-               <span class="cart-det">
-               إمكانية الاسترجاع : لا
-               </span>
-               <div class="cart-no-div">
-                <div class="counter-div w-103">
-                  <span class="plus">
-                    <i class="las la-plus"></i>
-                  </span>
-                  <input class="cart-input" type="text" value="1" disabled/>
-                  <span class="minus">
-                    <i class="las la-minus"></i>
-                  </span>
-                  
-                 
-                 </div>
-                 <span class="price">
-                  7.00 ر.س
-                </span>
-               </div>
-              </div>
-            </div>
+       
 
-            <div class="total-cart">
+            <div class="total-cart pt-32">
               <div class="total-record">
                <span class="total-label">
-                إجمالي المنتجات
+                إجمالي المنتجات بدون ضريبة
                </span>
                <span class="total-answer">
                 14.00 ر.س
@@ -795,23 +704,69 @@
 
               <div class="total-record">
                 <span class="total-label">
-                ضريبة القيمة المضافة
+               كود الخصم 10%
                 </span>
                 <span class="total-answer">
-                 2.00 ر.س
+                 1.40 ر.س
+                </span>
+               </div>
+               <div class="total-record">
+                <span class="total-label">
+              إجمالي المنتجات بعد الخصم
+                </span>
+                <span class="total-answer">
+                 12.60 ر.س
+                </span>
+               </div>
+               <div class="total-record">
+                <span class="total-label">
+              رسوم التوصيل
+                </span>
+                <span class="total-answer">
+                 5.00 ر.س
+                </span>
+               </div>
+               <div class="total-record">
+                <span class="total-label">
+              إجمالي المستحق بدون ضريبة
+                </span>
+                <span class="total-answer">
+                 17.60 ر.س
+                </span>
+               </div>
+               <div class="total-record">
+                <span class="total-label">
+               ضريبة القيمة المضافة 15%
+                </span>
+                <span class="total-answer">
+                 2.64 ر.س
+                </span>
+               </div>
+               <div class="total-record">
+                <span class="total-label">
+              إجمالي المستحق بعد الضريبة
+                </span>
+                <span class="total-answer">
+                 20.24 ر.س
+                </span>
+               </div>
+               <div class="total-record">
+                <span class="total-label">
+              قيمة الخصم من المحفظة
+                </span>
+                <span class="total-answer">
+                 10.00 ر.س
                 </span>
                </div>
                <span class="total-label mt-35">
-                إجمالي الطلب
+                إجمالي المستحق
                 </span>
                 <span class="total-answer fs-24 mt-13">
-                  16.00 ر.س
+                  10.24 ر.س
                  </span>
                  <div class="cart-btns">
-                  <a href="#" class=" cart-btn continue-btn">
-                    متابعة التسوق
-                  </a>
-                  <a href="checkout.html" class="cart-btn pay-btn">
+                 
+                  <a href="#" class="cart-btn pay-btn w-100">
                     إتمام الدفع
                   </a>
                  </div>
@@ -823,7 +778,7 @@
         
       </div>
 
-      <!-- cart-content -->
+      <!-- checkout-content -->
    
    
     <!-- footer section -->
