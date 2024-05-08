@@ -3693,6 +3693,10 @@ font-size: 16px;
 .my-acc-form .password-icon{
   font-size: 16px;
 }
+.my-account-list-content .favourite-btn{
+  background-color: var(--main-hover);
+  color: #fff;
+}
 /*                               edit user page                                     */
 
 /*                                    media query                                    */
