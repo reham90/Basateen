@@ -3604,7 +3604,93 @@ font-size: 16px;
 }
 /*                           order success page                               */
 
+/*                               edit user page                                     */
+.my-account-section{
+  display: flex;
+  padding: 0 0 40px;
+}
+.my-account-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-inline-end: 30px;
+  width: 262px;
+  padding: 25px 20px ;
+  background-color: #F9F9F9;
+  height: 100%;
+}
+.my-account-list li a{
+  width: 100%;
+ text-transform: capitalize;
+ 
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
 
+.my-account-list li a:hover{
+  color: var(--main-hover);
+  text-decoration: none;
+}
+.my-account-list li a:hover i{
+  color: var(--main-hover);
+}
+.my-account-list li:not(:last-child){
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 18px;
+}
+.my-account-list li a i{
+  color: #C5C5C5;
+  font-size: 24px;
+  margin-inline-end: 11px;
+  transition: 0.5s;
+}
+.my-account-list li a.active{
+  color: var(--main-hover);
+}
+.my-account-list li a.active i{
+  color: var(--main-hover);
+}
+.my-account-list li a.pale-link{
+  color: #8B8B8B;
+}
+.my-account-list li a.pale-link:hover{
+  color: var(--main-hover);
+}
+.my-account-list-content{
+  width: 674px;
+}
+.my-acc-title{
+  color: #000;
+  font-size: 20px;
+  font-family: "SST-ARABIC-BOLD";
+  margin: 10px 0 40px;
+  text-align: start;
+  text-transform: capitalize;
+}
+.w-262{
+  width: 262px;
+}
+.my-acc-label{
+  color: #000;
+  font-size: 14px;
+  font-family: "SST-ARABIC-MEDIUM";
+  margin-inline-start: 22px;
+  text-align: start;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.my-acc-form .form-input-1{
+  padding: 0 22px;
+}
+.my-acc-form .submit-btn{
+  width: 200px;
+  margin-top: 26px;
+}
+/*                               edit user page                                     */
 
 /*                                    media query                                    */
 /*                    menu in phone size                      */
@@ -3765,7 +3851,38 @@ font-size: 16px;
  .checkout-address{
   width: 100%;
  }
- 
+ .my-account-section{
+  flex-wrap: wrap;
+ }
+ .my-account-list{
+  margin-inline-end: 0;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 20px;
+  margin-bottom: 20px;
+ }
+ .my-account-list li:not(:last-child){
+border-bottom: 0;
+  margin: 0;
+  padding: 0;
+  margin-inline-end: 15px;
+ }
+ .my-account-list::-webkit-scrollbar {
+  height: 5px;
+ }
+ .my-account-list li a{
+  white-space: nowrap;
+ }
+ .my-acc-form .input-block{
+  margin-bottom: 15px;
+ }
+ .my-acc-form .form-input-1{
+  margin-bottom: 0;
+ }
+ .my-acc-form .submit-btn{
+  width: 100%;
+ }
   .navgition {
     display: block;
     position: fixed;
@@ -4004,6 +4121,12 @@ font-family: "SST-ARABIC-BOLD";
   width: 100% ;
   margin-bottom: 0 ;
 }
+.my-acc-form .form-record{
+  flex-wrap: wrap;
+}
+.w-262 {
+  width: 100%;
+}
 }
 
 
@@ -4029,7 +4152,10 @@ font-family: "SST-ARABIC-BOLD";
  }
  .form-record {
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 20px !important;
+}
+.my-acc-form .submit-btn{
+  width: 200px;
 }
 .product-details-content{
   flex-wrap: nowrap;
