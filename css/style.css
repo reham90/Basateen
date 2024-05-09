@@ -3795,12 +3795,55 @@ font-family: "SST-ARABIC-BOLD";
 
 /*                          address book page                           */
 
+/*                             notifications page                       */
+.notification-block{
+  margin-bottom: 7px;
+  padding: 20px 20px 30px;
+  border: 1.5px solid #EBEBEB;
+  border-radius: 5px;
+  display: flex;
+ 
+}
+.not-img{
+  margin-inline-end: 18px;
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+}
+.notification-text{
+  margin-top: 5px;
+}
+.not-paragraph{
+  color: #000;
+  font-size: 14px;
+  text-align: start;
+  line-height: 1.76;
+  margin: 0 0 18px;
+}
+.not-date{
+  color: #A1A1A1;
+  font-size: 12px;
+  text-align: start;
+  display: flex;
+  margin: 0;
+}
+.gray-bg{
+  background-color: #F3F3F3;
+}
+/*                             notifications page                       */
+
 /*                                    media query                                    */
 /*                    menu in phone size                      */
 
 @media (max-width: 991px) {
   .breadcrumb-sec{
     padding: 20px 0 30px;
+  }
+  .not-img{
+    display: none;
+  }
+  .notification-text{
+    margin-top: 0;
   }
   .filter-toggle {
     display: flex;
