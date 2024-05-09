@@ -2700,6 +2700,10 @@ var screen = new Swiper(".categories-slider .swiper-container", {
 $('.delete-product').on('click', function(){
   $(this).closest(".cart-block").remove();
 });
+
+$('.delete-btn').on('click', function(){
+    $(this).closest(".table-record").remove();
+  });
 //////////////////////////////// add to cart counter  /////////////////////////////////////////
 
 $('.minus').click(function () {

@@ -442,8 +442,23 @@ width: 0;
 }
 @media (max-width: 991px) {
  
- 
-  
+ .address-title-bar .my-acc-title{
+  margin: 0;
+ }
+ .w-847 {
+  width: 100% !important;
+}
+.table-head th{
+  padding: 1px 2rem;
+  white-space: nowrap;
+}
+  .address-table-div{
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .address-table-div::-webkit-scrollbar{
+    height: 5px;
+  }
   .sub-menu {
     align-items: start;
     padding: 0;
@@ -3660,9 +3675,7 @@ font-size: 16px;
 .my-account-list li a.pale-link:hover{
   color: var(--main-hover);
 }
-.my-account-list-content{
-  width: 674px;
-}
+
 .my-acc-title{
   color: #000;
   font-size: 20px;
@@ -3698,6 +3711,89 @@ font-size: 16px;
   color: #fff;
 }
 /*                               edit user page                                     */
+
+/*                           address book page                               */
+.address-title-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.new-address-link{
+  background-color: var(--main-hover);
+  color: #fff;
+  width: 126px;
+height: 36px;
+border-radius: 31px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.5s;
+text-decoration: none;
+font-size: 14px;
+font-family: "SST-ARABIC-BOLD";
+}
+.new-address-link:hover{
+  background-color: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+}
+.address-title-bar .my-acc-title{
+  margin-bottom: 0;
+}
+.w-847{
+  width: 847px;
+}
+.address-table{
+  width: 100%;
+}
+.table-head{
+  width: 100%;
+  height: 65px;
+  background: #F8F8F8;
+}
+.table-head th{
+  padding: 0 30px;
+  color: #000;
+  font-size: 14px;
+  font-family: "SST-ARABIC-MEDIUM";
+  text-transform: capitalize;
+}
+.edit-btn{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  color: #878787;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.edit-btn:hover{
+  color: var(--main-hover);
+}
+.edit-btn:focus{
+  outline: none;
+  border: 0;
+  color: var(--main-hover);
+}
+.table-record{
+  height: 65px;
+  background-color: #fff;
+  border-bottom: 1px solid #ECECEC;
+}
+.table-record td{
+ padding: 0 30px;
+  font-size: 14px;
+  color: #000;
+}
+.table-btn{
+  padding: 0 10px !important;
+}
+
+/*                          address book page                           */
 
 /*                                    media query                                    */
 /*                    menu in phone size                      */
