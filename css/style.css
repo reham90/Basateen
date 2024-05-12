@@ -3487,6 +3487,9 @@ background-color: #fff;
   font-size: 18px;
   font-family: "SST-ARABIC-BOLD";
 }
+html[dir="ltr"] .cart-btn{
+  font-size: 16px;
+}
 .continue-btn{
   background-color: var(--main-color);
   margin-inline-end: 10px;
