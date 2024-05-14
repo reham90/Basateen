@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Sallat Albasateen / account / change password </title>
+    <title> Sallat Albasateen / account /  my orders </title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -152,7 +152,7 @@
                 </li>
               </ul> -->
               <!-- list for guest-->
-              <a href="change-password.html" class="language-anchor hidden-xs hidden-sm">العربية</a>
+              <a href="my-orders.html" class="language-anchor hidden-xs hidden-sm">العربية</a>
            </div>
            </div>
            <!-- end top header-->
@@ -526,7 +526,7 @@ luxuries
 
 
 </li>
-<a href="change-password.html" class="language-anchor hidden-lg hidden-md">العربية</a>
+<a href="my-orders.html" class="language-anchor hidden-lg hidden-md">العربية</a>
 
               </ul>
              
@@ -551,12 +551,9 @@ luxuries
             <a class="bread-link bread-home " href="index-en.html">home</a>
           </li>
 
-          <li class=" item-23">
-            <span class="bread-current">account   </span>
-          </li>
         
           <li class="active item-23">
-            <span class="bread-current"> change password </span>
+            <span class="bread-current"> my orders </span>
           </li>
         </ol>
       </div>
@@ -578,13 +575,13 @@ luxuries
     </a>
    </li>
    <li>
-    <a href="change-password-en.html" class="active">
+    <a href="change-password-en.html" >
       <i class="las la-lock"></i>
     change password
     </a>
    </li>
    <li>
-    <a href="my-orders-en.html">
+    <a href="my-orders-en.html" class="active">
       <i class="las la-shopping-cart"></i>
   my orders
     </a>
@@ -689,72 +686,416 @@ delete account
    </li>
    </ul>
    
-   <div class="my-account-list-content">
-    <h2 class="my-acc-title">
-    change password
-    </h2>
-    <form class="my-acc-form">
-      <div class="form-record">
-        <div class="input-block w-262">
-          <label class="my-acc-label">
-          current password
-          </label>
-          <div class="form-input-div">
-            <input type="password" class="form-input-1 w-262" id="pass" placeholder="   ">
-           
-            <a onclick="togglePassword()">
-              <i class="las la-eye-slash  password-icon" id="eye-slash" ></i>
-              <i class=" las la-eye password-icon" id="eye" ></i>
-             
-              </a>
-          </div>
-        </div>
-       
-       
-      </div>
+   <div class="my-account-list-content w-847">
+  
+ 
+    <h2 class="my-acc-title mb-20">
+   my orders
+      </h2>
+      <ul class="nav nav-tabs wallet-tabs my-orders-tabs">
+        <li class="active"><a data-toggle="tab" href="#tab1"> current </a></li>
+        <li><a data-toggle="tab" href="#tab2"> finished </a></li>
+        <li><a data-toggle="tab" href="#tab3"> canceled </a></li>
+      </ul>
 
-      <div class="form-record">
-        <div class="input-block w-262">
-          <label class="my-acc-label">
-           new password
-          </label>
-          <div class="form-input-div">
-            <input type="password" class="form-input-1 w-262" id="pass-2" placeholder="   ">
-           
-            <a onclick="togglePassword2()">
-              <i class="las la-eye-slash  password-icon" id="eye-slash-2" ></i>
-              <i class=" las la-eye password-icon" id="eye-2" ></i>
-             
-              </a>
-          </div>
-        </div>
-       
-       
-      </div>
+      <div class="tab-content">
+        <div id="tab1" class="tab-pane fade in active">
+          <div class="address-table-div">
+            <table class="address-table">
+              <tr class="table-head">
+                <th> # </th>
+                
+                <th> order no. </th>
+                <th> date of requested order </th>
+                <th> delivery type </th>
+                <th>  order status </th>
+                <th>  total </th>
+                <th> bill </th>
+                <th>  show  </th>
+              </tr>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> immediately </td>
+                <td>  
+                  <span class="wait-order">
+                    pending
+                </span>
+                </td>
+                <td> 40.00 SAR</td>
+                <td>
+                  <button class="download">
+                    download
+                  </button>
+                </td>
+                <td>
+                  <a href="waiting-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> immediately </td>
+                <td>  
+                  <span class="wait-order under-progress-order">
+                    preparing
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="under-progress-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order finished-order">
+                prepared
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="finished-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order delivering-order">
+                delivering
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="delivering-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
 
-      <div class="form-record">
-        <div class="input-block w-262">
-          <label class="my-acc-label">
-        confirm new password
-          </label>
-          <div class="form-input-div">
-            <input type="password" class="form-input-1 w-262" id="pass-3" placeholder="   ">
-           
-            <a onclick="togglePassword3()">
-              <i class="las la-eye-slash  password-icon" id="eye-slash-3" ></i>
-              <i class=" las la-eye password-icon" id="eye-3" ></i>
-             
-              </a>
-          </div>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+               cancel request
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order problem-order">
+               has problem
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="problem-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+            
+            </table>
+           </div>
         </div>
-       
-       
+        <div id="tab2" class="tab-pane fade">
+            <div class="address-table-div">
+            <table class="address-table">
+              <tr class="table-head">
+                <th> # </th>
+                
+                <th> order no. </th>
+                <th> date of requested order </th>
+                <th> delivery type </th>
+                <th>  order status </th>
+                <th>  total </th>
+                <th> bill </th>
+                <th>  show  </th>
+                <th>  return </th>
+              </tr>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+               recieved
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+              recieved
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+              recieved
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+              recieved
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+            
+            </table>
+           </div>
+        </div>
+        <div id="tab3" class="tab-pane fade">
+          <div class="address-table-div">
+            <table class="address-table wallet-table">
+              <tr class="table-head">
+                <th> #   </th>
+                <th> order no. </th>
+                <th> date of requested order </th>
+                <th> delivery type </th>
+                <th>  order status </th>
+                <th>  total </th>
+                <th> bill </th>
+                <th>  show  </th>
+               
+              </tr>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                order cancelled
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                    order cancelled
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                    order cancelled
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+               <td> immediately </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                    order cancelled
+                </span>
+                </td>
+                <td> 40.00  SAR </td>
+                <td>
+                  <button class="download">
+                   download
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order-en.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+            
+            </table>
+           </div>
+        </div>
       </div>
-   <button class="submit-btn">
-    save changes
-   </button>
-    </form>
-   </div>
+    </div>
 
 
   </div>
@@ -898,58 +1239,7 @@ delete account
     </a>
     <!-- arrow to top -->
 
-    <script>
-      function togglePassword() {
-          
-          var x = document.getElementById("pass");
-          var eyeSlash = document.getElementById("eye-slash");
-          var eye = document.getElementById("eye");
-          if (x.type === "password") {
-            x.type = "text";
-            eyeSlash.style.display="none";
-            eye.style.display="block";
-      
-          } else {
-            x.type = "password";
-            eyeSlash.style.display="block";
-            eye.style.display="none";
-          }
-        }
-
-        function togglePassword2() {
-          
-          var x = document.getElementById("pass-2");
-          var eyeSlash = document.getElementById("eye-slash-2");
-          var eye = document.getElementById("eye-2");
-          if (x.type === "password") {
-            x.type = "text";
-            eyeSlash.style.display="none";
-            eye.style.display="block";
-      
-          } else {
-            x.type = "password";
-            eyeSlash.style.display="block";
-            eye.style.display="none";
-          }
-        }
-
-        function togglePassword3() {
-          
-          var x = document.getElementById("pass-3");
-          var eyeSlash = document.getElementById("eye-slash-3");
-          var eye = document.getElementById("eye-3");
-          if (x.type === "password") {
-            x.type = "text";
-            eyeSlash.style.display="none";
-            eye.style.display="block";
-      
-          } else {
-            x.type = "password";
-            eyeSlash.style.display="block";
-            eye.style.display="none";
-          }
-        }
-     </script>
+ 
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>

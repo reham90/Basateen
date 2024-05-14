@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>سلة البساتين /    الحساب /   دفتر العناوين / إضافة جديد </title>
+    <title>سلة البساتين /    الحساب /   طلباتي </title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -152,7 +152,7 @@
                 </li>
               </ul> -->
               <!-- list for guest-->
-              <a href="new-address-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
+              <a href="my-orders-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
            </div>
            </div>
            <!-- end top header-->
@@ -526,7 +526,7 @@
 
 
 </li>
-<a href="new-address-en.html" class="language-anchor hidden-lg hidden-md">English</a>
+<a href="my-orders-en.html" class="language-anchor hidden-lg hidden-md">English</a>
 
               </ul>
              
@@ -550,15 +550,10 @@
               <a class="bread-link bread-home " href="index.html">الرئيسية</a>
             </li>
 
-            <li class=" item-23">
-              <span class="bread-current">الحساب   </span>
-            </li>
+         
           
-            <li class=" item-23">
-              <span class="bread-current">  دفتر العناوين </span>
-            </li>
             <li class="active item-23">
-              <span class="bread-current">  إضافة جديد  </span>
+              <span class="bread-current">   طلباتي </span>
             </li>
           </ol>
         </div>
@@ -566,7 +561,7 @@
      
       <!-- end breadcrumb -->
    
-     <!-- edit user -->
+     <!-- address book -->
     
      <div class="container">
       
@@ -586,7 +581,7 @@
       </a>
      </li>
      <li>
-      <a href="my-orders.html">
+      <a href="my-orders.html"  class="active">
         <i class="las la-shopping-cart"></i>
      طلباتي
       </a>
@@ -604,7 +599,7 @@
       </a>
      </li>
      <li>
-      <a href="address.html" class="active">
+      <a href="address.html" >
         <i class="las la-address-book"></i>
      دفتر العناوين
       </a>
@@ -622,12 +617,12 @@
       </a>
      </li>
      <li>
-      <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal">
+      <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal3">
         <i class="las la-sign-out-alt"></i>
         تسجيل خروج
        </button>
        <!-- Modal -->
-<div class="modal fade wallet-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade wallet-modal" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
 <div class="modal-dialog wallet-dialog" role="document">
 <div class="modal-content">
  <div class="modal-header wallet-header">
@@ -656,12 +651,12 @@
 </div>
      </li>
      <li>
-      <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal2">
+      <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal4">
         <i class="las la-trash"></i>
         حذف الحساب
        </button>
        <!-- Modal -->
-<div class="modal fade wallet-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+<div class="modal fade wallet-modal" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
 <div class="modal-dialog wallet-dialog" role="document">
 <div class="modal-content">
  <div class="modal-header wallet-header">
@@ -691,105 +686,421 @@
      </li>
      </ul>
      
-     <div class="my-account-list-content">
-      <h2 class="my-acc-title">
-       إضافة عنوان جديد
-      </h2>
-      <form class="my-acc-form">
-        <div class="form-record">
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-              اسم العنوان
-            </label>
-            <input type="text" class="form-input-1 w-262" placeholder=" ">
-          </div>
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-            اسم المستلم
-            </label>
-            <input type="text" class="form-input-1 w-262" placeholder=" ">
-          </div>
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-             رقم الجوال
-            </label>
-            <div class="form-input-div">
-              <input type="number" class="form-input-1 w-262" placeholder="  540000000">
-             
-              <span class="flag-section">
-                +966
-                <img class="flag" src="images/flag.png" alt="flag">
-              </span>
-            </div>
-          </div>
-         
-        </div>
-
-        <div class="form-record">
-         
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-            المدينة
-            </label>
-            <div class="form-input-div">
-              <select class="form-input-1 w-262">
-                <option> اختر من القائمة   </option>
-               <option> الرياض   </option>
-               <option> المدينة </option>
-               </select>
-             
-               
-               <i class="las la-angle-down register-form-icon"></i>
-             </div>
-          </div>
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-             الحي
-            </label>
-            <div class="form-input-div">
-              <select class="form-input-1 w-262">
-                <option> اختر من القائمة   </option>
-               <option> الملز   </option>
-               <option> الملز </option>
-               </select>
-             
-               
-               <i class="las la-angle-down register-form-icon"></i>
-             </div>
-          </div>
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-            وصف العنوان
-            </label>
-            <input type="text" class="form-input-1 w-262" placeholder=" ">
-          </div>
-        </div>
-        <div class="form-record">
-         
-          <div class="input-block w-262">
-            <label class="my-acc-label">
-            الموقع على الخريطة
-            </label>
-            <div class="form-input-div">
-              <input type="text" class="form-input-1 w-262" id="pass" placeholder="  اضغط لتحديد الموقع">
-             
-              <i class="las la-map password-icon"></i>
-            </div>
-          </div>
-         
-        
-        </div>
-     <button class="submit-btn">
-     إضافة
-     </button>
-      </form>
-     </div>
+     <div class="my-account-list-content w-847">
   
+ 
+    <h2 class="my-acc-title mb-20">
+    طلباتي
+      </h2>
+      <ul class="nav nav-tabs wallet-tabs my-orders-tabs">
+        <li class="active"><a data-toggle="tab" href="#tab1"> جاري </a></li>
+        <li><a data-toggle="tab" href="#tab2"> منتهي </a></li>
+        <li><a data-toggle="tab" href="#tab3"> ملغي </a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="tab1" class="tab-pane fade in active">
+          <div class="address-table-div">
+            <table class="address-table">
+              <tr class="table-head">
+                <th> # </th>
+                
+                <th> رقم الطلب  </th>
+                <th> تاريخ إنشاء الطلب  </th>
+                <th> نوع التوصيل  </th>
+                <th>  حالة الطلب  </th>
+                <th>  الإجمالي </th>
+                <th> الفاتورة </th>
+                <th>  عرض </th>
+              </tr>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order">
+                  قيد الإنتظار
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="waiting-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order under-progress-order">
+                 جاري التجهيز
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="under-progress-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order finished-order">
+                 تم التجهيز
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="finished-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order delivering-order">
+                جاري التوصيل
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="delivering-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+               طلب إلغاء
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order problem-order">
+               به مشكلة
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="problem-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+            
+            </table>
+           </div>
+        </div>
+        <div id="tab2" class="tab-pane fade">
+            <div class="address-table-div">
+            <table class="address-table">
+              <tr class="table-head">
+                <th> # </th>
+                
+                <th> رقم الطلب  </th>
+                <th> تاريخ إنشاء الطلب  </th>
+                <th> نوع التوصيل  </th>
+                <th>  حالة الطلب  </th>
+                <th>  الإجمالي </th>
+                <th> الفاتورة </th>
+                <th>  عرض </th>
+                <th>  إرجاع </th>
+              </tr>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+               تم الإستلام
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+               تم الإستلام
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+               تم الإستلام
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order recieved-order">
+               تم الإستلام
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="recieved-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+                <td>
+                  <button class=" show-order-link return-order-btn">
+                    <i class="las la-undo-alt"></i>
+                  </button>
+                </td>
+              </tr>
+            
+            </table>
+           </div>
+        </div>
+        <div id="tab3" class="tab-pane fade">
+          <div class="address-table-div">
+            <table class="address-table wallet-table">
+              <tr class="table-head">
+                <th> #   </th>
+                <th> رقم الطلب  </th>
+                <th> تاريخ إنشاء الطلب  </th>
+                <th> نوع التوصيل  </th>
+                <th>  حالة الطلب  </th>
+                <th>  الإجمالي </th>
+                <th> الفاتورة </th>
+                <th>  عرض </th>
+               
+              </tr>
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                 تم إلغاء الطلب
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                 تم إلغاء الطلب
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                 تم إلغاء الطلب
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+      
+              <tr class="table-record">
+                <td> 1 </td>
+                <td> 6000000092 </td>
+                <td> 2023/06/20 - 10:30 </td>
+                <td> فوري </td>
+                <td>  
+                  <span class="wait-order cancel-order">
+                 تم إلغاء الطلب
+                </span>
+                </td>
+                <td> 40.00 ر.س </td>
+                <td>
+                  <button class="download">
+                    تحميل
+                  </button>
+                </td>
+                <td>
+                  <a href="cancel-order.html" class="show-order-link">
+                    <i class="las la-eye"></i>
+                  </a>
+                </td>
+              </tr>
+            
+            </table>
+           </div>
+        </div>
+      </div>
+    </div>
 
     </div>
       
    </div>
-    <!-- edit user -->
+    <!-- address book -->
    
    
     <!-- footer section -->

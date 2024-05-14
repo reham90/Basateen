@@ -3647,6 +3647,25 @@ font-size: 16px;
   align-items: center;
   transition: 0.5s;
 }
+.my-account-list li button{
+  width: 100%;
+ text-transform: capitalize;
+ background-color: transparent;
+ border:0;
+ outline: none;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  padding: 0;
+  white-space: nowrap;
+}
+.my-account-list li button:focus{
+  outline: none;
+  border: 0;
+  
+}
 
 .my-account-list li a:hover{
   color: var(--main-hover);
@@ -3666,18 +3685,25 @@ font-size: 16px;
   margin-inline-end: 11px;
   transition: 0.5s;
 }
+.my-account-list li button i{
+  color: #C5C5C5;
+  font-size: 24px;
+  margin-inline-end: 11px;
+  transition: 0.5s;
+}
 .my-account-list li a.active{
   color: var(--main-hover);
 }
 .my-account-list li a.active i{
   color: var(--main-hover);
 }
-.my-account-list li a.pale-link{
+.my-account-list li button.pale-link{
   color: #8B8B8B;
 }
-.my-account-list li a.pale-link:hover{
+.my-account-list li button.pale-link:hover{
   color: var(--main-hover);
 }
+
 
 .my-acc-title{
   color: #000;
@@ -3751,6 +3777,8 @@ outline: none;
 }
 .address-title-bar .my-acc-title{
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 .w-847{
   width: 847px;
@@ -3972,6 +4000,10 @@ margin-inline-end: 16px;
   padding: 12px 0 5px;
   padding-inline-end: 12px;
   opacity: 1;
+  width: auto;
+}
+.wallet-header .close i{
+  margin-inline-end: 0;
 }
 .modal-title{
   color: #000;
@@ -4009,7 +4041,159 @@ html[dir="ltr"] .wallet-modal .submit-btn{
 .table-head th{
   padding: 0 10px;
 }
+.sign-out-note{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 25px;
+}
+.mb-22{
+  margin-bottom: 22px;
+}
+.sign-out-yes{
+  height: 48px !important;
+  background-color: var(--main-color) !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  margin-bottom: 10px !important;
+}
+.sign-out-yes:hover{
+  background-color: var(--main-hover) !important;
+}
+.sign-out-no{
+  height: 48px !important;
+  background-color: var(--main-hover) !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  margin-top: 0 !important;
+ 
+}
+.sign-out-no:hover{
+  background-color: var(--main-color) !important;
+}
 /*                                      wallet page                             */
+
+/*                                      my-orders page                             */
+.my-orders-tabs li a{
+  width: 90px;
+}
+.wait-order{
+  color: #F5A623;
+  font-size: 12px;
+  font-family: "SST-ARABIC-BOLD";
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 166, 35, 0.2);
+  width: 82px;
+height: 24px;
+border-radius: 12px;
+
+}
+html[dir="ltr"] .wait-order{
+  width: 100px;
+}
+.download{
+  color: #E13612;
+  font-size: 14px;
+  background-color: transparent;
+  transition: 0.5s;
+  border: 0;
+  outline: none;
+  padding: 0;
+}
+.download:hover{
+  color: var(--main-color);
+}
+.download:focus{
+  outline: none;
+  border: 0;
+  color: var(--main-color);
+}
+.show-order-link{
+  font-size: 20px;
+  color: #9A9A9A;
+  transition: 0.5s;
+}
+.show-order-link i{
+  font-size: 20px;
+ 
+}
+.under-progress-order{
+  color: #34B7EA;
+  background-color: rgba(52, 183, 234, 0.2);
+}
+.show-order-link:hover{
+  color: var(--main-color);
+}
+.finished-order{
+  color: rgba(0, 215, 135, 1);
+  background-color: rgba(0, 215, 135, 0.2);
+}
+.delivering-order{
+  color: rgba(102, 103, 167, 1);
+  background-color: rgba(102, 103, 167, 0.2);
+}
+.cancel-order{
+  color: rgba(237, 29, 36, 1);
+  background-color: rgba(237, 29, 36, 0.2);
+}
+.problem-order{
+  color: rgba(155, 155, 155, 1);
+  background-color: rgba(155, 155, 155, 0.2);
+}
+.return-order-btn{
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 0;
+}
+.return-order-btn:hover{
+  color: var(--main-color);
+}
+.return-order-btn:focus{
+  border: 0;
+  outline: none;
+  color: var(--main-color);
+}
+.recieved-order{
+  color: rgba(102, 166, 27, 1);
+  background-color: rgba(102, 166, 27, 0.2);
+}
+.my-acc-title .wait-order{
+  margin-inline-start: 15px;
+}
+.print-bill-link{
+  background-color: #66A61B;
+}
+.print-bill-link:hover{
+  background-color: var(--main-hover);
+}
+.order-date{
+  color: #4B5256;
+  font-size: 14px;
+  display: flex;
+  margin: 17px 0 0;
+}
+.order-table{
+  background-color: #F8F8F8;
+  padding: 30px;
+}
+.order-table .table-head{
+  height: auto;
+  border-bottom: 1px solid #D5D5D5;
+
+}
+.order-table .table-head th{
+  padding-bottom: 23px;
+  
+}
+.order-table .table-record{
+  background-color: #F8F8F8 ;
+}
+/*                                      my-orders  page                             */
 
 /*                                    media query                                    */
 /*                    menu in phone size                      */
