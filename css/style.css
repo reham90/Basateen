@@ -444,7 +444,22 @@ width: 0;
  
  .address-title-bar .my-acc-title{
   margin: 0;
+  flex-wrap: wrap;
+  width: 230px;
  }
+ .w-360 {
+  width: 100%;
+}
+.order-table{
+  padding: 30px 20px !important;
+}
+ .my-acc-title .wait-order {
+  margin-inline-start: 0 !important;
+  margin-top: 15px;
+}
+.order-title-bar{
+  align-items: flex-start !important;
+}
  .w-847 {
   width: 100% !important;
 }
@@ -1952,7 +1967,7 @@ ol.breadcrumb li:not(.active):after {
 
 /*        login                  */
 .p-0{
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .body-bg{
 	position: relative;
@@ -2418,7 +2433,7 @@ select {
   justify-content: center;
 }
 .fs-16{
-  font-size: 16px;
+  font-size: 16px !important;
 }
   .mb-17{
     margin-bottom: 17px;
@@ -4192,6 +4207,94 @@ html[dir="ltr"] .wait-order{
 }
 .order-table .table-record{
   background-color: #F8F8F8 ;
+}.w-360{
+  width: 360px;
+}
+.total-order-info{
+  display: flex;
+  justify-content: flex-end;
+}
+.mt-54{
+  margin-top: 54px;
+}
+
+.f-medium{
+  font-family: "SST-ARABIC-MEDIUM";
+}
+.f-roman{
+  font-family: "SST-ARABIC-ROMAN";
+}
+.map-link{
+  color: var(--main-hover);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.map-link:hover{
+  color: var(--main-color);
+  text-decoration: none;
+}
+.w-292{
+  width: 292px;
+}
+.total-order-info-2 .total-record{
+  justify-content: unset;
+}
+.progress-order-btns{
+  display: flex;
+}
+.problem-btn{
+  color: #A2A2A2;
+  font-size: 16px;
+  font-family: "SST-ARABIC-BOLD";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  outline: none;
+  border-radius: 31px;
+  background-color: #EEEEEE;
+  width: 178px;
+  height: 48px;
+  transition: 0.5s;
+  margin-inline-end: 10px;
+}
+.problem-btn:hover{
+  background-color: var(--main-hover);
+  color: #fff;
+}
+.problem-btn:focus{
+  background-color: var(--main-hover);
+  color: #fff;
+  outline: none;
+  border: 0;
+}
+.cancel-btn{
+  color: #A2A2A2;
+  font-size: 16px;
+  font-family: "SST-ARABIC-BOLD";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  outline: none;
+  border-radius: 31px;
+  background-color: #EEEEEE;
+  width: 178px;
+  height: 48px;
+  transition: 0.5s;
+
+}
+.cancel-btn:hover{
+  background-color: var(--main-hover);
+  color: #fff;
+}
+.cancel-btn:focus{
+  background-color: var(--main-hover);
+  color: #fff;
+  outline: none;
+  border: 0;
 }
 /*                                      my-orders  page                             */
 
@@ -4208,6 +4311,12 @@ html[dir="ltr"] .wait-order{
   .notification-text{
     margin-top: 0;
   }
+  .w-292 {
+    width: 215px;
+}
+.total-order-info-2 .total-record{
+  gap:15px;
+}
   .filter-toggle {
     display: flex;
     color: var(--main-color);
@@ -4675,7 +4784,10 @@ font-family: "SST-ARABIC-BOLD";
     order: 0;
     margin-bottom: 0;
   }
-
+  .my-acc-title .wait-order {
+    margin-inline-start: 15px !important;
+    margin-top: 0;
+}
  .footer-logo-col{
   align-items: flex-start;
  }
