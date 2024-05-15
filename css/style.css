@@ -4296,6 +4296,95 @@ html[dir="ltr"] .wait-order{
   outline: none;
   border: 0;
 }
+.problem-modal .address-block{
+  height: auto;
+  background-color: transparent;
+  padding-inline-start: 0;
+}
+.problem-modal .address-type-radio:checked ~ .checkmark-2::before{
+  background-color: var(--main-color);
+}
+.problem-modal .submit-btn{
+  width: 154px;
+  margin-top: 0;
+}
+.problem-modal .sign-out-yes{
+  margin-bottom: 0;
+  margin-inline-end: 6px;
+}
+.address-block label{
+  margin: 0;
+}
+.problem-reason{
+  text-align: start;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+.mb-13{
+  margin-bottom: 13px !important;
+}
+.problem-modal .textarea{
+  height: 100px;
+  width: 100%;
+  background-color: #F1F1F1;
+  border-radius: 24px;
+  padding: 17px 25px;
+  border:1px solid transparent;
+  transition: 0.5s;
+  outline: none;
+  font-size: 14px;
+  color: #9B9B9B;
+}
+.problem-modal .textarea:focus{
+  border: 1px solid var(--main-color);
+  outline: none;
+}
+.rating-btn{
+  background-color: var(--main-color);
+  margin-inline-end: 5px;
+}
+.rating-order-div{
+  display: flex;
+}
+.rating-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+  gap:3px;
+}
+.rating-list li i{
+  font-size: 36px;
+  color: #C5C5C5;
+}
+.rating-list li i.gold{
+  color: #F5A61D;
+}
+.mb-19{
+  margin-bottom: 19px;
+}
+.fs-24{
+  justify-content: flex-start;
+}
+.fs-24 li i{
+  font-size: 24px;
+ 
+}
+.fs-18 i{
+  font-size: 18px;
+  width: 32px;
+height: 32px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+background-color: #E9E9E9;
+}
 /*                                      my-orders  page                             */
 
 /*                                    media query                                    */
@@ -4340,6 +4429,12 @@ html[dir="ltr"] .wait-order{
   }
   .filter-times{
     margin-inline-end: 5px;
+  }
+  .recieved-order-title-bar{
+    flex-wrap: wrap;
+  }
+  .rating-order-div{
+    margin-top: 15px;
   }
   .filter-section{
     position: absolute;

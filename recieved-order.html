@@ -152,7 +152,7 @@
                 </li>
               </ul> -->
               <!-- list for guest-->
-              <a href="under-progress-order-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
+              <a href="recieved-order-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
            </div>
            </div>
            <!-- end top header-->
@@ -526,7 +526,7 @@
 
 
 </li>
-<a href="under-progress-order-en.html" class="language-anchor hidden-lg hidden-md">English</a>
+<a href="recieved-order-en.html" class="language-anchor hidden-lg hidden-md">English</a>
 
               </ul>
              
@@ -686,22 +686,79 @@
      </ul>
      
      <div class="my-account-list-content w-847">
-      <div class="address-title-bar order-title-bar">
+      <div class="address-title-bar order-title-bar recieved-order-title-bar">
         <div class="order-title">
           <h2 class="my-acc-title">
             طلب #6000000092
-            <span class="wait-order under-progress-order">
-            جاري التجهيز
+            <span class="wait-order recieved-order">
+            تم الإستلام
            </span>
            </h2>
            <span class="order-date">
             2023/06/20 - 10:30
            </span>
         </div>
+        <div class="rating-order-div">
+        
+          <button type="button" class="new-address-link print-bill-link rating-btn" data-toggle="modal" data-target="#exampleModal5">
+            تقييم الطلب
+           </button>
+                       <!-- Modal -->
+<div class="modal fade wallet-modal problem-modal" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal-dialog wallet-dialog" role="document">
+  <div class="modal-content">
+   <div class="modal-header wallet-header">
+     
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <i class="las la-times"></i>
+     </button>
+   </div>
+   <div class="modal-body">
+    <h2 class="modal-title mb-22">
+تقييم الطلب
+    </h2>
+   
+  
+ <ul class="rating-list">
+  <li>
+    <i class="las la-star gold"></i>
+  </li>
+  <li>
+    <i class="las la-star gold"></i>
+  </li>
+  <li>
+    <i class="las la-star gold"></i>
+  </li>
+  <li>
+    <i class="las la-star gold"></i>
+  </li>
+  <li>
+    <i class="las la-star"></i>
+  </li>
+ </ul>
+
+    
+<textarea class="textarea">     اضف ملاحظاتك على الخدمة  </textarea>
+<div class="cart-btns">
+  <button class="submit-btn sign-out-yes">
+   إرسال
+  </button>
+  <button class="submit-btn sign-out-no">
+   إلغاء
+ </button>
+ </div>
+   
+   </div>
+  
+  </div>
+  </div>
+  </div>
+          <a href="#" class="new-address-link print-bill-link">
+            طباعة الفاتورة
+            </a>
+        </div>
        
-         <a href="#" class="new-address-link print-bill-link">
-         طباعة الفاتورة
-         </a>
+        
       </div>
     <div class="address-table-div order-table">
       <table class="address-table">
@@ -710,7 +767,7 @@
           <th> السعر  </th>
           <th> الكمية </th>
           <th> الإجمالي </th>
-          
+          <th> إرجاع </th>
         </tr>
         <tr class="table-record">
           <td> 
@@ -738,7 +795,11 @@
           <td> 7.00 ر.س </td>
           <td> 1 </td>
           <td> 7.00 ر.س  </td>
-         
+          <td> 
+            <button class="show-order-link return-order-btn fs-18">
+              <i class="las la-undo-alt"></i>
+            </button>
+             </td>
         
         </tr>
 
