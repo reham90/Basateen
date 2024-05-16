@@ -4673,6 +4673,34 @@ margin-inline-end: 15px;
   width: 158px;
 
 }
+.terms-conditions-text{
+  color: #000;
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.768;
+  margin: 0 0 30px;
+}
+.terms-section{
+  padding-bottom: 80px;
+}
+.about-section{
+  padding: 96px 0 100px;
+  display: flex;
+  gap:33px;
+}
+.about-paragraph{
+  max-width: 552px;
+}
+.about-img{
+  max-width: 553px;
+
+}
+.about-img img{
+  width: 100%;
+}
+.mt-0{
+  margin-top: 0;
+}
 /*                            contact us page                                           */
 
 /*                                    media query                                    */
@@ -4790,6 +4818,18 @@ margin-inline-end: 15px;
         display: flex;
         flex-wrap: wrap;
   }
+  .about-section {
+    padding: 30px 0 50px ;
+   
+    flex-wrap: wrap;
+}
+.about-img{
+  order:-1;
+  max-width: 100%;
+}
+.about-paragraph{
+  max-width: 100%;
+}
   .products-grid-content .offer-block{
     width: 160px;
   }
@@ -5190,6 +5230,15 @@ font-family: "SST-ARABIC-BOLD";
   .my-acc-title .wait-order {
     margin-inline-start: 15px !important;
     margin-top: 0;
+}
+.about-img{
+  order:2;
+}
+.about-section{
+  flex-wrap: nowrap;
+}
+.about-paragraph{
+  max-width: 500px;
 }
  .footer-logo-col{
   align-items: flex-start;
