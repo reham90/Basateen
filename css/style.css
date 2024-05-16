@@ -25,6 +25,74 @@ max-height: max-content;
  
  
 }
+.chat-btn {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 0;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  box-shadow: 0px 3px 6px #66A61B80;
+	color: #fff;
+	font-size: 30px;
+	background-color: var(--main-color);
+	position: fixed;
+	z-index: 9999;
+	bottom: 10px;
+	inset-inline-start: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  }
+  .chat-btn:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  .chat-btn i{
+	width: 30px;
+    height: 33px;
+    align-items: flex-end;
+    display: flex;
+   
+  }
+  .chat-btn::after {
+	display: flex;
+	background-color: var(--main-color);
+	opacity: 0.102;
+	border-radius: 300px;
+	height: 58px;
+	width: 58px;
+	animation: pulsate 2s ease-out;
+	animation-iteration-count: infinite;
+	opacity: 0;
+	content: "";
+	z-index: -1;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: -5px;
+	right: -5px;
+	bottom: 0;
+  }
+  .chat-btn:focus {
+	border: 0;
+	outline: none;
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(0.1, 0.1);
+      opacity: 0;
+    }
+     
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2, 1.2);
+      opacity: 0;
+    }
+    }
 
 img {
   image-rendering: -webkit-optimize-contrast;
@@ -2436,7 +2504,7 @@ select {
   font-size: 16px !important;
 }
   .mb-17{
-    margin-bottom: 17px;
+    margin-bottom: 17px !important;
   }
   .mb-270{
     margin-bottom: 270px;
@@ -3404,7 +3472,8 @@ background-color: #fff;
   font-size: 14px;
   height: auto;
   margin: 0;
- 
+  display: flex;
+
 }
 .delete-product{
   border: 0;
@@ -4479,8 +4548,132 @@ background-color: #E9E9E9;
   font-family: "Line Awesome Free";
   font-weight: 700;
 }
+.product-number{
+  color: #9F9F9F;
+  font-size: 14px;
+  display: flex;
+ margin-inline-end: 5px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.b-0{
+  border: 0;
+}
 
 /*                                      my-orders  page                             */
+
+/*                            contact us page                                           */
+.contact-info-title{
+  color: #000;
+  font-size: 16px;
+  font-family: "SST-ARABIC-BOLD";
+  text-align: start;
+  text-transform: capitalize;
+  margin: 0 0 18px;
+}
+.m-start-0{
+  margin-inline-start: 0;
+}
+.mb-54{
+  margin-bottom: 54px;
+}
+.contact-info-list{
+  display: flex;
+  align-items: center;
+  gap:60px;
+  list-style: none;
+  margin: 0;
+ padding: 0;
+ margin-bottom: 40px;
+}
+.contact-info-list li a{
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+.contact-info-list li a:hover{
+  color: var(--main-color);
+}
+.contact-icon-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #E8F2DD;
+font-size: 20px;
+color: #66A61B;
+margin-inline-end: 15px;
+}
+.map-section{
+  width: 100%;
+  margin-bottom: 62px;
+  position: relative;
+}
+.map-img{
+  width: 100%;
+}
+.map-indicator{
+  position: absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.contact-note{
+  text-align: start;
+  color: #000;
+  font-size: 16px;
+  font-family: "SST-ARABIC-BOLD";
+  margin: 0 0 33px;
+}
+.contact-form{
+  width: 100%;
+  margin-bottom: 100px;
+}
+.contact-form .form-record{
+  gap:30px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.contact-form .form-input-1{
+  width: 260px;
+  padding: 0 22px;
+}
+.contact-form .input-block{
+  width: 260px;
+}
+.contact-textarea{
+  width: 100%;
+  height: 100px;
+  border-radius: 24px;
+  background-color: #F1F1F1;
+  padding: 22px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  outline: none;
+}
+.contact-textarea:focus{
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+.msg-block{
+  width: 100%;
+}
+.send-btn-div{
+  display: flex;
+  justify-content: flex-end;
+}
+.send-btn-div .submit-btn{
+  width: 158px;
+
+}
+/*                            contact us page                                           */
 
 /*                                    media query                                    */
 /*                    menu in phone size                      */
@@ -4524,6 +4717,23 @@ background-color: #E9E9E9;
   }
   .filter-times{
     margin-inline-end: 5px;
+  }
+  .contact-info-list{
+    flex-wrap: wrap;
+    gap:20px;
+  }
+  .contact-info-list li a{
+    width: 100%;
+  }
+  .map-indicator{
+    width: 30px;
+  }
+  .contact-form .input-block{
+    margin-bottom: 15px;
+  }
+  .send-btn-div{
+    margin-top: 20px;
+    justify-content: center;
   }
   .recieved-order-title-bar{
     flex-wrap: wrap;
@@ -4910,6 +5120,9 @@ font-family: "SST-ARABIC-BOLD";
 }
 .top-header-list-text{
   display: none;
+}
+.contact-form .form-input-1{
+  width: 205px;
 }
 .search-section{
   width: 500px;
