@@ -550,7 +550,7 @@ header {
 
 @media (max-width: 991px) {
 
-	.address-title-bar .my-acc-title {
+	.title-bar-with-button .my-acc-title {
 		margin: 0;
 		flex-wrap: wrap;
 		width: 230px;
@@ -582,12 +582,12 @@ header {
 		white-space: nowrap;
 	}
 
-	.address-table-div {
+	.my-account-table-div {
 		width: 100%;
 		overflow-x: scroll;
 	}
 
-	.address-table-div::-webkit-scrollbar {
+	.my-account-table-div::-webkit-scrollbar {
 		height: 5px;
 	}
 
@@ -4291,7 +4291,7 @@ html[dir="ltr"] .cart-btn {
 /*                               edit user page                                     */
 
 /*                           address book page                               */
-.address-title-bar {
+.title-bar-with-button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -4299,7 +4299,7 @@ html[dir="ltr"] .cart-btn {
 	width: 100%;
 }
 
-.new-address-link {
+.button-in-title-bar {
 	background-color: var(--main-hover);
 	color: #fff;
 	width: 126px;
@@ -4316,19 +4316,19 @@ html[dir="ltr"] .cart-btn {
 	outline: none;
 }
 
-.new-address-link:hover {
+.button-in-title-bar:hover {
 	background-color: var(--main-color);
 	color: #fff;
 	text-decoration: none;
 }
 
-.new-address-link:focus {
+.button-in-title-bar:focus {
 	outline: none;
 	border: 0;
 	color: #fff;
 }
 
-.address-title-bar .my-acc-title {
+.title-bar-with-button .my-acc-title {
 	margin-bottom: 0;
 	display: flex;
 	align-items: center;
@@ -4338,7 +4338,7 @@ html[dir="ltr"] .cart-btn {
 	width: 847px;
 }
 
-.address-table {
+.my-account-table {
 	width: 100%;
 }
 
@@ -4456,7 +4456,7 @@ html[dir="ltr"] .cart-btn {
 	align-items: center;
 }
 
-.wallet-modal-btns .new-address-link {
+.wallet-modal-btns .button-in-title-bar {
 	margin-inline-end: 5px;
 }
 
@@ -4523,12 +4523,12 @@ html[dir="ltr"] .cart-btn {
 	font-size: 14px;
 }
 
-.wallet-tabs {
+.my-account-tabs {
 	margin: 0 0 20px;
 	border: 0;
 }
 
-.wallet-tabs>li>a {
+.my-account-tabs>li>a {
 	padding: 0;
 	margin: 0;
 	color: #000;
@@ -4546,15 +4546,15 @@ html[dir="ltr"] .cart-btn {
 	transition: 0.5s;
 }
 
-.wallet-tabs>li>a:hover {
+.my-account-tabs>li>a:hover {
 	border: 0;
 	background-color: var(--main-color);
 	color: #fff;
 }
 
-.wallet-tabs>li.active>a,
-.wallet-tabs>li.active>a:hover,
-.wallet-tabs>li.active>a:focus {
+.my-account-tabs>li.active>a,
+.my-account-tabs>li.active>a:hover,
+.my-account-tabs>li.active>a:focus {
 	border: 0;
 	background-color: var(--main-color);
 	color: #fff;
@@ -4868,7 +4868,7 @@ html[dir="ltr"] .wait-order {
 	justify-content: unset;
 }
 
-.progress-order-btns {
+.popup-order-btns-div {
 	display: flex;
 }
 
@@ -4956,7 +4956,7 @@ html[dir="ltr"] .wait-order {
 	margin: 0;
 }
 
-.problem-reason {
+.extra-order-paragraph {
 	text-align: start;
 	font-size: 14px;
 	color: #000;
@@ -5290,7 +5290,7 @@ html[dir="ltr"] .wait-order {
 
 }
 
-.terms-conditions-text {
+.paragraph-text {
 	color: #000;
 	text-align: start;
 	font-size: 16px;
@@ -5492,7 +5492,7 @@ html[dir="ltr"] .wait-order {
 		margin-inline-end: 3px;
 	}
 
-	.wallet-tabs>li>a {
+	.my-account-tabs>li>a {
 		width: 105px;
 	}
 
@@ -5764,7 +5764,7 @@ html[dir="ltr"] .wait-order {
 		justify-content: center;
 	}
 
-	.wallet-modal-btns .new-address-link {
+	.wallet-modal-btns .button-in-title-bar {
 		width: 100%;
 		margin-top: 10px;
 	}
@@ -6054,7 +6054,7 @@ html[dir="ltr"] .wait-order {
 		width: auto;
 	}
 
-	.wallet-modal-btns .new-address-link {
+	.wallet-modal-btns .button-in-title-bar {
 		width: 126px;
 		margin-top: 0;
 	}

@@ -1,892 +1,740 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Sallat Albasateen / account /  notifications </title>
-    <link rel="icon" href="images/fav.png" type="image/png" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/line-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-
-  <body>
-    <!-- preloader -->
-    <div class="preloader">
-      <div class="progress">
-        <div class="progress-bar"></div>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title> Sallat Albasateen / account /  notifications </title>
+      <link rel="icon" href="images/fav.png" type="image/png" />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/line-awesome.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/fonts.css" />
+      <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/swiper.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="progress">
+            <div class="progress-bar"></div>
+         </div>
       </div>
-    </div>
-    <!-- preloader -->
-    <!-- header section -->
-
-    <header>
-    
- 
-      <div class="top-header">
-   
-        
-          <!-- menu-icon-for-mobile -->
-          <div class="show-icons">
-            <a class="menu-bars" id="menu-id" href="#!">
-              <i class="las la-bars bar show-icon"></i>
-              <i class="las la-times times hide-icon"></i>
-            </a>
-          </div>
-          <!-- end menu-icon-for-mobile -->
-
-      
-          <div class="nav-header">
-            <div class="img-logo">
-              <a href="index-en.html"><img src="images/logo.png" class="img-responsive" /></a>
+      <!-- preloader -->
+      <!-- header section -->
+      <header>
+         <div class="top-header">
+            <!-- menu-icon-for-mobile -->
+            <div class="show-icons">
+               <a class="menu-bars" id="menu-id" href="#!">
+               <i class="las la-bars bar show-icon"></i>
+               <i class="las la-times times hide-icon"></i>
+               </a>
             </div>
-
-           
-              <form class="search-section">
-                <input
-                  class="search-input"
-                  type="text"
-                  name=""
-                  value=""
-                  placeholder= "Search by product name, category or brand"
-                />
-                <button class="search-button " >
+            <!-- end menu-icon-for-mobile -->
+            <div class="nav-header">
+               <div class="img-logo">
+                  <a href="index-en.html"><img src="images/logo.png" class="img-responsive" /></a>
+               </div>
+               <form class="search-section">
+                  <input
+                     class="search-input"
+                     type="text"
+                     name=""
+                     value=""
+                     placeholder= "Search by product name, category or brand"
+                     />
+                  <button class="search-button " >
                   <i class="las la-search search-icon"></i>
-                </button>
-               
-              </form>
-           <!-- list for user -->
-              <ul class="top-header-list">
-                <li>
-                  <a href="#">
-                    <i class="las la-user top-header-list-icon"></i>
-                    <span class="top-header-list-text">
+                  </button>
+               </form>
+               <!-- list for user -->
+               <ul class="top-header-list">
+                  <li>
+                     <a href="#">
+                     <i class="las la-user top-header-list-icon"></i>
+                     <span class="top-header-list-text">
                      My Account
-                    </span>
-                 
-                  </a>
-                </li>
-                <li>
-                  <a href="notifications-en.html">
-                    <div class="notification-icon">
-                      <i class="las la-bell top-header-list-icon"></i>
-                      <span class="notification-no">
-                        0
-                      </span>
-                    </div>
-                    
-                    <span class="top-header-list-text">
-                      Notifications
-                    </span>
-                 
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="las la-map-marker-alt top-header-list-icon"></i>
-                    <span class="top-header-list-text">
-                      My Location
-                    </span>
-                 
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="notification-icon">
-                      <i class="las la-shopping-cart top-header-list-icon"></i>
-                      <span class="notification-no">
-                        0
-                      </span>
-                    </div>
-                    
-                    <span class="top-header-list-text">
-                    Cart
-                    </span>
-                 
-                  </a>
-                </li>
-              </ul>
-              <!-- list for user -->
-
-              <!-- list for guest -->
-              <!-- <ul class="top-header-list">
-                <li>
-                  <a href="#">
-                    <i class="las la-user top-header-list-icon"></i>
-                    <span class="top-header-list-text">
-                     Sign in / Register
-                    </span>
-                 
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="#">
-                    <i class="las la-map-marker-alt top-header-list-icon"></i>
-                    <span class="top-header-list-text">
+                     </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="notifications-en.html">
+                        <div class="notification-icon">
+                           <i class="las la-bell top-header-list-icon"></i>
+                           <span class="notification-no">
+                           0
+                           </span>
+                        </div>
+                        <span class="top-header-list-text">
+                        Notifications
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="las la-map-marker-alt top-header-list-icon"></i>
+                     <span class="top-header-list-text">
                      My Location
-                    </span>
-                 
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="notification-icon">
-                      <i class="las la-shopping-cart top-header-list-icon"></i>
-                      <span class="notification-no">
-                        0
+                     </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="notification-icon">
+                           <i class="las la-shopping-cart top-header-list-icon"></i>
+                           <span class="notification-no">
+                           0
+                           </span>
+                        </div>
+                        <span class="top-header-list-text">
+                        Cart
+                        </span>
+                     </a>
+                  </li>
+               </ul>
+               <!-- list for user -->
+               <!-- list for guest -->
+               <!-- <ul class="top-header-list">
+                  <li>
+                    <a href="#">
+                      <i class="las la-user top-header-list-icon"></i>
+                      <span class="top-header-list-text">
+                       Sign in / Register
                       </span>
-                    </div>
-                    
-                    <span class="top-header-list-text">
-                  Cart
-                    </span>
-                 
-                  </a>
-                </li>
-              </ul> -->
-              <!-- list for guest-->
-              <a href="notifications.html" class="language-anchor hidden-xs hidden-sm">العربية</a>
-           </div>
-           </div>
-           <!-- end top header-->
-
-           <!-- navigation-bar -->
-          <div class="navigation-bar">
-
-         
-           <div class="navgition">
-            
-              <ul class="big-menu list-unstyled">
-                <li>
-                  <a href="index.html"> home </a>
-                </li>
-                <li>
-                  <a href="offers-en.html"> offers  </a>
-                </li>
-                <li class=" menu-item-has-children ">
-                 
-                    <a href="#">
-                      foodstuffs
-                    </a>
-                 
-               
-                 
-                    <ul class=" sub-menu ">
-                     
-                      <li >
-                        <a href="#" >
-                          <span> foodstuffs  </span>
-                        </a>
-                      </li>
-                      <li >
-                        <a href="#" >
-                          <span> foodstuffs  </span>
-                        </a>
-                      </li>
-                      <li >
-                        <a href="#" >
-                          <span> foodstuffs  </span>
-                        </a>
-                      </li>
-                      <li >
-                        <a href="#" >
-                          <span> foodstuffs  </span>
-                        </a>
-                      </li>
-                      
-                    </ul>
-                 
-               
-                </li>
-                <li class=" menu-item-has-children ">
-                 
-                  <a href="#">
-                 fruits & vegetables
-                  </a>
-               
-             
-               
-                  <ul class=" sub-menu ">
                    
-                    <li >
-                      <a href="#" >
-                        <span>   fruits & vegetables </span>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#" >
-                        <span>  fruits & vegetables </span>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#" >
-                        <span>   fruits & vegetables </span>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#" >
-                        <span>  fruits & vegetables </span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-               
-             
-              </li>
-              <li class=" menu-item-has-children ">
-                 
-                <a href="#">
-              dairy & cheese
-                </a>
-             
-           
-             
-                <ul class=" sub-menu ">
-                 
-                  <li >
-                    <a href="#" >
-                      <span>  dairy & cheese</span>
-                    </a>
-                  </li>
-                  <li >
-                    <a href="#" >
-                      <span>  dairy & cheese</span>
-                    </a>
-                  </li>
-                  <li >
-                    <a href="#" >
-                      <span>  dairy & cheese</span>
-                    </a>
-                  </li>
-                  <li >
-                    <a href="#" >
-                      <span>   dairy & cheese</span>
                     </a>
                   </li>
                   
-                </ul>
-             
-           
-            </li>
-            <li class=" menu-item-has-children ">
-                 
-              <a href="#">
-          drinks
-              </a>
-           
-         
-           
-              <ul class=" sub-menu ">
-               
-                <li >
-                  <a href="#" >
-                    <span>    drinks</span>
-                  </a>
-                </li>
-                <li >
-                  <a href="#" >
-                    <span>    drinks</span>
-                  </a>
-                </li>
-                <li >
-                  <a href="#" >
-                    <span>    drinks</span>
-                  </a>
-                </li>
-                <li >
-                  <a href="#" >
-                    <span>   drinks</span>
-                  </a>
-                </li>
-                
-              </ul>
-           
-         
-          </li>
-          <li class=" menu-item-has-children ">
-                 
-            <a href="#">
-              sweets
-            </a>
-         
-       
-         
-            <ul class=" sub-menu ">
-             
-              <li >
-                <a href="#" >
-                  <span>  sweets</span>
-                </a>
-              </li>
-              <li >
-                <a href="#" >
-                  <span> sweets</span>
-                </a>
-              </li>
-              <li >
-                <a href="#" >
-                  <span>  sweets</span>
-                </a>
-              </li>
-              <li >
-                <a href="#" >
-                  <span> sweets</span>
-                </a>
-              </li>
-              
-            </ul>
-         
-       
-        </li>
-
-        <li class=" menu-item-has-children ">
-                 
-          <a href="#">
-  freezers
-          </a>
-       
-     
-       
-          <ul class=" sub-menu ">
-           
-            <li >
-              <a href="#" >
-                <span>      freezers</span>
-              </a>
-            </li>
-            <li >
-              <a href="#" >
-                <span>   freezers</span>
-              </a>
-            </li>
-            <li >
-              <a href="#" >
-                <span>     freezers</span>
-              </a>
-            </li>
-            <li >
-              <a href="#" >
-                <span>    freezers</span>
-              </a>
-            </li>
-            
-          </ul>
-       
-     
-      </li>
-
-      <li class=" menu-item-has-children ">
-                 
-        <a href="#">
-toaster
-        </a>
-     
-   
-     
-        <ul class=" sub-menu ">
-         
-          <li >
-            <a href="#" >
-              <span>     toaster</span>
-            </a>
-          </li>
-          <li >
-            <a href="#" >
-              <span>  toaster</span>
-            </a>
-          </li>
-          <li >
-            <a href="#" >
-              <span>    toaster</span>
-            </a>
-          </li>
-          <li >
-            <a href="#" >
-              <span>   toaster</span>
-            </a>
-          </li>
-          
-        </ul>
-     
-   
-    </li>
-
-    <li class=" menu-item-has-children ">
-                 
-      <a href="#">
-health & beauty
-      </a>
-   
- 
-   
-      <ul class=" sub-menu ">
-       
-        <li >
-          <a href="#" >
-            <span>   health & beauty</span>
-          </a>
-        </li>
-        <li >
-          <a href="#" >
-            <span> health & beauty</span>
-          </a>
-        </li>
-        <li >
-          <a href="#" >
-            <span>   health & beauty</span>
-          </a>
-        </li>
-        <li >
-          <a href="#" >
-            <span> health & beauty</span>
-          </a>
-        </li>
-        
-      </ul>
-   
- 
-  </li>
-
-  
-  <li class=" menu-item-has-children ">
-                 
-    <a href="#">
-luxuries
-    </a>
- 
-
- 
-    <ul class=" sub-menu ">
-     
-      <li >
-        <a href="#" >
-          <span>    luxuries</span>
-        </a>
-      </li>
-      <li >
-        <a href="#" >
-          <span> luxuries</span>
-        </a>
-      </li>
-      <li >
-        <a href="#" >
-          <span>  luxuries</span>
-        </a>
-      </li>
-      <li >
-        <a href="#" >
-          <span>   luxuries</span>
-        </a>
-      </li>
-      
-    </ul>
- 
-
-</li>
-
-<li class=" menu-item-has-children ">
-                 
-  <a href="#">
-    various sections
-  </a>
-
-
-
-  <ul class=" sub-menu ">
-   
-    <li >
-      <a href="#" >
-        <span>      various sections</span>
-      </a>
-    </li>
-    <li >
-      <a href="#" >
-        <span>  various sections</span>
-      </a>
-    </li>
-    <li >
-      <a href="#" >
-        <span>   various sections</span>
-      </a>
-    </li>
-    <li >
-      <a href="#" >
-        <span>    various sections</span>
-      </a>
-    </li>
-    
-  </ul>
-
-
-</li>
-<a href="notifications.html" class="language-anchor hidden-lg hidden-md">العربية</a>
-
-              </ul>
-             
-            </div>
-          </div>
-          <!-- end navigation bar -->
-           
-         
-        </div> 
-   
-     
-    </header>
-
-    <!-- header section     -->
-   
-    <!-- breadcrumb -->
-    <div class="container">
-      <div class="breadcrumb-sec">
-     
-        <ol class="breadcrumb">
-          <li class="item-home">
-            <a class="bread-link bread-home " href="index-en.html">home</a>
-          </li>
-
-          <li class=" item-23">
-            <span class="bread-current">account   </span>
-          </li>
-        
-          <li class="active item-23">
-            <span class="bread-current"> notifications </span>
-          </li>
-        </ol>
-      </div>
-    </div>
-   
-    <!-- end breadcrumb -->
- 
-   <!-- edit user -->
-  
-   <div class="container">
-    
-
-  <div class="my-account-section">
-   <ul class="my-account-list">
-   <li>
-    <a href="edit-user-en.html" >
-      <i class="las la-user"></i>
-     edit account
-    </a>
-   </li>
-   <li>
-    <a href="change-password-en.html">
-      <i class="las la-lock"></i>
-    change password
-    </a>
-   </li>
-   <li>
-    <a href="my-orders-en.html">
-      <i class="las la-shopping-cart"></i>
-  my orders
-    </a>
-   </li>
-   <li>
-    <a href="returns-en.html">
-      <i class="las la-undo-alt"></i>
-      Returns
-    </a>
-   </li>
-   <li>
-    <a href="favourite-en.html">
-      <i class="lar la-heart"></i>
-  favourite
-    </a>
-   </li>
-   <li>
-    <a href="address-en.html">
-      <i class="las la-address-book"></i>
-      Address Book
-    </a>
-   </li>
-   <li>
-    <a href="notifications-en.html"  class="active">
-      <i class="las la-bell"></i>
-  notifications
-    </a>
-   </li>
-   <li>
-    <a href="wallet-en.html">
-      <i class="las la-wallet"></i>
-  wallet
-    </a>
-   </li>
-   <li>
-    <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal">
-      <i class="las la-sign-out-alt"></i>
-     sign out
-     </button>
-     <!-- Modal -->
-<div class="modal fade wallet-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog wallet-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header wallet-header">
- 
- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-   <i class="las la-times"></i>
- </button>
-</div>
-<div class="modal-body">
-<h2 class="modal-title mb-22">
-sign out
-</h2>
-<p class="sign-out-note">
- Are you sure you want to sign out ?
-</p>
-<button class="submit-btn sign-out-yes">
-   yes
- </button>
- <button class="submit-btn sign-out-no">
-  cancel
-</button>
-</div>
-
-</div>
-</div>
-</div>
-   </li>
-   <li>
-    <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal2">
-      <i class="las la-trash"></i>
-      delete account
-     </button>
-     <!-- Modal -->
-<div class="modal fade wallet-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-<div class="modal-dialog wallet-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header wallet-header">
- 
- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-   <i class="las la-times"></i>
- </button>
-</div>
-<div class="modal-body">
-<h2 class="modal-title mb-22">
-delete account
-</h2>
-<p class="sign-out-note">
- Are you sure you want to delete account ?
-</p>
-<button class="submit-btn sign-out-yes">
-   yes
- </button>
- <button class="submit-btn sign-out-no">
-  cancel
-</button>
-</div>
-
-</div>
-</div>
-</div>
-   </li>
-   </ul>
-   
-   <div class="my-account-list-content w-847">
-    
-      <h2 class="my-acc-title">
-      notifications
-       </h2>
-     
-    
-       <div class="notification-block">
-        <img class="not-img" src="images/not.png" alt="notification img">
-        <div class="notification-text">
-          <p class="not-paragraph">
-            There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead
-          </p>
-          <span class="not-date">
-            10:30 - 20/06/2023
-          </span>
-        </div>
-       </div>
-  
-       <div class="notification-block">
-        <img class="not-img" src="images/not.png" alt="notification img">
-        <div class="notification-text">
-          <p class="not-paragraph">
-            There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead          </p>
-          <span class="not-date">
-            10:30 - 20/06/2023
-          </span>
-        </div>
-       </div>
-  
-       <div class="notification-block gray-bg">
-        <img class="not-img" src="images/not.png" alt="notification img">
-        <div class="notification-text">
-          <p class="not-paragraph">
-            There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead          </p>
-          <span class="not-date">
-            10:30 - 20/06/2023
-          </span>
-        </div>
-       </div>
-  
-       <div class="notification-block gray-bg">
-        <img class="not-img" src="images/not.png" alt="notification img">
-        <div class="notification-text">
-          <p class="not-paragraph">
-            There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead          </p>
-          <span class="not-date">
-            10:30 - 20/06/2023
-          </span>
-        </div>
-       </div>
-  </div>
-
-
-  </div>
-    
- </div>
-  <!-- edit user -->
- 
-
-
-   
-   
-    <!-- footer section -->
-    <footer>
-      <div class="container">
-       
-     
-        <div class="footer-cont">
-          <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12">
-              <div class="footer-logo-col">
-              <a href="index.html">
-                <img class="footer-logo" src="images/logo-2.png" alt="logo">
-              </a>
-              <ul class="social-list">
-                <li>
-                  <a href="#">
-                    <i class="lab la-telegram-plane"></i>
-                  </a>
-                </li>
-                <li><a href="#">
-                  <i class="lab la-youtube"></i>
-                </a>
-              </li>
-                <li>
-                  <a href="#">
-                    <i class="lab la-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lab la-facebook-f"></i>
-                  </a>
-                </li>
-              </ul>
-             </div>
-            </div>
-            <div class="col-md-6 col-sm-4 col-xs-12">
-              <div class="nav-foot-cont">
-                <h2 class="nav-foot-header nav-accordion">quick links </h2>
-                <ul class="nav-foot nav-wrap list-unstyled">
-                  <li class="nav-foot-li">
-                    <a href="about-en.html" class="nav-foot-link">about us </a>
-                  </li>
-                  <li class="nav-foot-li">
-                    <a href="faq-en.html" class="nav-foot-link">FAQ </a>
-                  </li>
-                  <li class="nav-foot-li">
-                    <a href="terms-conditions-en.html" class="nav-foot-link">terms & conditions </a>
-                  </li>
-                  <li class="nav-foot-li">
-                    <a href="privacy-policy-en.html" class="nav-foot-link">privacy policy </a>
-                  </li>
-                  <li class="nav-foot-li">
-                    <a href="partners-terms-conditions-en.html" class="nav-foot-link">branches</a>
-                  </li>
-                  <li class="nav-foot-li">
-                    <a href="contact-us-en.html" class="nav-foot-link">contact us </a>
-                  </li>
-                 
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4 col-xs-12">
-              <div class="nav-foot-cont">
-                <h2 class="nav-foot-header">contact information  </h2>
-               
-                <div class="nav-foot">
-                 <ul class="contact-list">
                   <li>
                     <a href="#">
-                      <i class="las la-home contact-icon"></i>
-                      Riyadh, Saudi Arabia
-                    </a>
-                  
-                  </li>
-                  <li>
-                    <i class="las la-phone contact-icon"></i>
-                    <a href="tel:01145726252">
-                      01145726252
-                    </a>
-                  
-                  </li>
-                  <li>
-                    <i class="las la-fax contact-icon"></i>
-                    <a href="tel:01145726252">
-                      01145726252
+                      <i class="las la-map-marker-alt top-header-list-icon"></i>
+                      <span class="top-header-list-text">
+                       My Location
+                      </span>
+                   
                     </a>
                   </li>
                   <li>
-                    <i class="las la-envelope contact-icon"></i>
-                    <a href="mailto:someone@yoursite.com">
-                      info@salletalbasateen.com
-                    </a> 
+                    <a href="#">
+                      <div class="notification-icon">
+                        <i class="las la-shopping-cart top-header-list-icon"></i>
+                        <span class="notification-no">
+                          0
+                        </span>
+                      </div>
+                      
+                      <span class="top-header-list-text">
+                    Cart
+                      </span>
+                   
+                    </a>
                   </li>
-                 </ul>
-                </div>
-              </div>
+                  </ul> -->
+               <!-- list for guest-->
+               <a href="notifications.html" class="language-anchor hidden-xs hidden-sm">العربية</a>
             </div>
-           
-          </div>
-        </div>
-        <div class="copy-flex">
-         
-          <div class="copy-right">
-            © Sallat Albasateen 2024
-                    </div>
-                    <div class="payment-list">
-                      <img class="img-responsive" src="images/payment-methods/01.png" alt="payment methods">
-                     </div>         
-                    <div class="copy-right">
-                      designed and developed by
-
-  <a href="#">
-    <img class="tasawk-logo" src="images/tasawk-en.png" alt="tasawk logo">
-  </a>
-
-                             </div>
-        </div>
+         </div>
+         <!-- end top header-->
+         <!-- navigation-bar -->
+         <div class="navigation-bar">
+            <div class="navgition">
+               <ul class="big-menu list-unstyled">
+                  <li>
+                     <a href="index.html"> home </a>
+                  </li>
+                  <li>
+                     <a href="offers-en.html"> offers  </a>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     foodstuffs
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span> foodstuffs  </span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> foodstuffs  </span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> foodstuffs  </span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> foodstuffs  </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     fruits & vegetables
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>   fruits & vegetables </span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  fruits & vegetables </span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   fruits & vegetables </span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  fruits & vegetables </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     dairy & cheese
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>  dairy & cheese</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  dairy & cheese</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  dairy & cheese</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   dairy & cheese</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     drinks
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>    drinks</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>    drinks</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>    drinks</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   drinks</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     sweets
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>  sweets</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> sweets</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  sweets</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> sweets</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     freezers
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>      freezers</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   freezers</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>     freezers</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>    freezers</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     toaster
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>     toaster</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  toaster</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>    toaster</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   toaster</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     health & beauty
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>   health & beauty</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> health & beauty</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   health & beauty</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> health & beauty</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     luxuries
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>    luxuries</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span> luxuries</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  luxuries</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   luxuries</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class=" menu-item-has-children ">
+                     <a href="#">
+                     various sections
+                     </a>
+                     <ul class=" sub-menu ">
+                        <li >
+                           <a href="#" >
+                           <span>      various sections</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>  various sections</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>   various sections</span>
+                           </a>
+                        </li>
+                        <li >
+                           <a href="#" >
+                           <span>    various sections</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <a href="notifications.html" class="language-anchor hidden-lg hidden-md">العربية</a>
+               </ul>
+            </div>
+         </div>
+         <!-- end navigation bar -->
+         </div> 
+      </header>
+      <!-- header section     -->
+      <!-- breadcrumb -->
+      <div class="container">
+         <div class="breadcrumb-sec">
+            <ol class="breadcrumb">
+               <li class="item-home">
+                  <a class="bread-link bread-home " href="index-en.html">home</a>
+               </li>
+               <li class=" item-23">
+                  <span class="bread-current">account   </span>
+               </li>
+               <li class="active item-23">
+                  <span class="bread-current"> notifications </span>
+               </li>
+            </ol>
+         </div>
       </div>
-    </footer>
-    <!-- footer section -->
-    <!-- arrow to top -->
-    <a class="arrow-top">
+      <!-- end breadcrumb -->
+      <!-- edit user -->
+      <div class="container">
+         <div class="my-account-section">
+            <ul class="my-account-list">
+               <li>
+                  <a href="edit-user-en.html" >
+                  <i class="las la-user"></i>
+                  edit account
+                  </a>
+               </li>
+               <li>
+                  <a href="change-password-en.html">
+                  <i class="las la-lock"></i>
+                  change password
+                  </a>
+               </li>
+               <li>
+                  <a href="my-orders-en.html">
+                  <i class="las la-shopping-cart"></i>
+                  my orders
+                  </a>
+               </li>
+               <li>
+                  <a href="returns-en.html">
+                  <i class="las la-undo-alt"></i>
+                  Returns
+                  </a>
+               </li>
+               <li>
+                  <a href="favourite-en.html">
+                  <i class="lar la-heart"></i>
+                  favourite
+                  </a>
+               </li>
+               <li>
+                  <a href="address-en.html">
+                  <i class="las la-address-book"></i>
+                  Address Book
+                  </a>
+               </li>
+               <li>
+                  <a href="notifications-en.html"  class="active">
+                  <i class="las la-bell"></i>
+                  notifications
+                  </a>
+               </li>
+               <li>
+                  <a href="wallet-en.html">
+                  <i class="las la-wallet"></i>
+                  wallet
+                  </a>
+               </li>
+               <li>
+                  <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal">
+                  <i class="las la-sign-out-alt"></i>
+                  sign out
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade wallet-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog wallet-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header wallet-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="las la-times"></i>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <h2 class="modal-title mb-22">
+                                 sign out
+                              </h2>
+                              <p class="sign-out-note">
+                                 Are you sure you want to sign out ?
+                              </p>
+                              <button class="submit-btn sign-out-yes">
+                              yes
+                              </button>
+                              <button class="submit-btn sign-out-no">
+                              cancel
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <button type="button" class="pale-link" data-toggle="modal" data-target="#exampleModal2">
+                  <i class="las la-trash"></i>
+                  delete account
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade wallet-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                     <div class="modal-dialog wallet-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header wallet-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="las la-times"></i>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <h2 class="modal-title mb-22">
+                                 delete account
+                              </h2>
+                              <p class="sign-out-note">
+                                 Are you sure you want to delete account ?
+                              </p>
+                              <button class="submit-btn sign-out-yes">
+                              yes
+                              </button>
+                              <button class="submit-btn sign-out-no">
+                              cancel
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <div class="my-account-list-content w-847">
+               <h2 class="my-acc-title">
+                  notifications
+               </h2>
+               <div class="notification-block">
+                  <img class="not-img" src="images/not.png" alt="notification img">
+                  <div class="notification-text">
+                     <p class="not-paragraph">
+                        There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead
+                     </p>
+                     <span class="not-date">
+                     10:30 - 20/06/2023
+                     </span>
+                  </div>
+               </div>
+               <div class="notification-block">
+                  <img class="not-img" src="images/not.png" alt="notification img">
+                  <div class="notification-text">
+                     <p class="not-paragraph">
+                        There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead          
+                     </p>
+                     <span class="not-date">
+                     10:30 - 20/06/2023
+                     </span>
+                  </div>
+               </div>
+               <div class="notification-block gray-bg">
+                  <img class="not-img" src="images/not.png" alt="notification img">
+                  <div class="notification-text">
+                     <p class="not-paragraph">
+                        There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead          
+                     </p>
+                     <span class="not-date">
+                     10:30 - 20/06/2023
+                     </span>
+                  </div>
+               </div>
+               <div class="notification-block gray-bg">
+                  <img class="not-img" src="images/not.png" alt="notification img">
+                  <div class="notification-text">
+                     <p class="not-paragraph">
+                        There is a long-established fact that the readable content of a page will distract the reader from focusing on the external appearance of the text or the way the paragraphs are placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a more or less natural distribution of letters instead          
+                     </p>
+                     <span class="not-date">
+                     10:30 - 20/06/2023
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- edit user -->
+      <!-- footer section -->
+      <footer>
+         <div class="container">
+            <div class="footer-cont">
+               <div class="row">
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                     <div class="footer-logo-col">
+                        <a href="index.html">
+                        <img class="footer-logo" src="images/logo-2.png" alt="logo">
+                        </a>
+                        <ul class="social-list">
+                           <li>
+                              <a href="#">
+                              <i class="lab la-telegram-plane"></i>
+                              </a>
+                           </li>
+                           <li><a href="#">
+                              <i class="lab la-youtube"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                              <i class="lab la-instagram"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                              <i class="fa-brands fa-x-twitter"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                              <i class="lab la-facebook-f"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-4 col-xs-12">
+                     <div class="nav-foot-cont">
+                        <h2 class="nav-foot-header nav-accordion">quick links </h2>
+                        <ul class="nav-foot nav-wrap list-unstyled">
+                           <li class="nav-foot-li">
+                              <a href="about-en.html" class="nav-foot-link">about us </a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="faq-en.html" class="nav-foot-link">FAQ </a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="terms-conditions-en.html" class="nav-foot-link">terms & conditions </a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="privacy-policy-en.html" class="nav-foot-link">privacy policy </a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="partners-terms-conditions-en.html" class="nav-foot-link">branches</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact-us-en.html" class="nav-foot-link">contact us </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                     <div class="nav-foot-cont">
+                        <h2 class="nav-foot-header">contact information  </h2>
+                        <div class="nav-foot">
+                           <ul class="contact-list">
+                              <li>
+                                 <a href="#">
+                                 <i class="las la-home contact-icon"></i>
+                                 Riyadh, Saudi Arabia
+                                 </a>
+                              </li>
+                              <li>
+                                 <i class="las la-phone contact-icon"></i>
+                                 <a href="tel:01145726252">
+                                 01145726252
+                                 </a>
+                              </li>
+                              <li>
+                                 <i class="las la-fax contact-icon"></i>
+                                 <a href="tel:01145726252">
+                                 01145726252
+                                 </a>
+                              </li>
+                              <li>
+                                 <i class="las la-envelope contact-icon"></i>
+                                 <a href="mailto:someone@yoursite.com">
+                                 info@salletalbasateen.com
+                                 </a> 
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copy-flex">
+               <div class="copy-right">
+                  © Sallat Albasateen 2024
+               </div>
+               <div class="payment-list">
+                  <img class="img-responsive" src="images/payment-methods/01.png" alt="payment methods">
+               </div>
+               <div class="copy-right">
+                  designed and developed by
+                  <a href="#">
+                  <img class="tasawk-logo" src="images/tasawk-en.png" alt="tasawk logo">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer section -->
+      <!-- arrow to top -->
+      <a class="arrow-top">
       <i class="las la-arrow-up"></i>
-    </a>
-    <!-- arrow to top -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+      </a>
+      <!-- arrow to top -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
 </html>
