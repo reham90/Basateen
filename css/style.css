@@ -1906,7 +1906,7 @@ footer {
 	white-space: nowrap;
 	font-size: 14px;
 	color: #fff;
-	margin-bottom: 12px;
+	margin-bottom: 24px;
 	margin-top: 0;
 	text-align: start;
 	font-family: "SST-ARABIC-BOLD";
@@ -4715,10 +4715,11 @@ html[dir="ltr"] .my-modal .submit-btn {
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(245, 166, 35, 0.2);
-	width: 82px;
+	padding: 0 15px;
 	height: 24px;
 	border-radius: 12px;
-
+flex-shrink: 0;
+width: max-content;
 }
 
 html[dir="ltr"] .wait-order {
@@ -5399,14 +5400,19 @@ html[dir="ltr"] .wait-order {
 	}
 
 	.contact-info-list {
-		flex-wrap: wrap;
+		flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
 		gap: 20px;
 	}
 
 	.contact-info-list li a {
 		width: 100%;
 	}
-
+	.chat-btn{
+		inset-inline-end: 10px;
+		inset-inline-start: auto;
+	}
 	.map-indicator {
 		width: 30px;
 	}
