@@ -5456,9 +5456,11 @@ html[dir="ltr"] .wait-order {
 
 	.products-title-sec {
 		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		align-items: center;
+		justify-content: start;
+        
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
 	}
 
 	.range-slider {
