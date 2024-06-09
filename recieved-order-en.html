@@ -586,24 +586,15 @@
                                  <h2 class="modal-title mb-22">
                                     rating order
                                  </h2>
-                                 <ul class="rating-list">
-                                    <li>
-                                       <i class="las la-star gold"></i>
-                                    </li>
-                                    <li>
-                                       <i class="las la-star gold"></i>
-                                    </li>
-                                    <li>
-                                       <i class="las la-star gold"></i>
-                                    </li>
-                                    <li>
-                                       <i class="las la-star gold"></i>
-                                    </li>
-                                    <li>
-                                       <i class="las la-star"></i>
-                                    </li>
-                                 </ul>
-                                 <textarea class="textarea">     Add your comments about the service  </textarea>
+                                
+                                 <div class="rating-list">
+                                    <i class="las la-star star" data-rating="1"></i>
+                                    <i class="las la-star star" data-rating="2"></i>
+                                    <i class="las la-star star" data-rating="3"></i>
+                                    <i class="las la-star star" data-rating="4"></i>
+                                    <i class="las la-star star" data-rating="5"></i>
+                                  </div>
+                                 <textarea class="textarea"  onfocus="clearContents(this);">Add your comments about the service  </textarea>
                                  <div class="modal-btns">
                                     <button class="submit-btn sign-out-yes">
                                     send
@@ -1187,6 +1178,27 @@
       <i class="las la-arrow-up"></i>
       </a>
       <!-- arrow to top -->
+     <script>
+   function clearContents(element) {
+  element.value = '';
+}
+     </script>
+         <script>
+            const stars = document.querySelectorAll('.star');
+          
+          document.addEventListener('click', (evt) => {
+            if (evt.target.classList.contains('star')) {
+              let clicktargetReached = false;
+              for (const star of stars) {
+                star.classList[clicktargetReached ? 'remove' : 'add']('selected');
+                if (star === evt.target) {
+                  clicktargetReached = true;
+                }
+              }
+              result.textContent = evt.target.dataset.rating;
+            }
+          });
+                   </script>
       <script src="js/jquery-2.1.1.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/wow.min.js"></script>

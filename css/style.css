@@ -3958,10 +3958,12 @@ html[dir="ltr"] .product-info {
 }
 
 .total-record {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 18px;
+	display: grid;
+   
+    align-items: center;
+    margin-bottom: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .total-label {
@@ -4722,9 +4724,7 @@ flex-shrink: 0;
 width: max-content;
 }
 
-html[dir="ltr"] .wait-order {
-	width: 100px;
-}
+
 
 .download {
 	color: #E13612;
@@ -4879,9 +4879,7 @@ html[dir="ltr"] .wait-order {
 	text-decoration: none;
 }
 
-.w-292 {
-	width: 292px;
-}
+
 
 .total-order-info-2 .total-record {
 	justify-content: unset;
@@ -5003,6 +5001,16 @@ html[dir="ltr"] .wait-order {
 	border: 1px solid var(--main-color);
 	outline: none;
 }
+.map-modal-btn{
+	background: transparent;
+    border: 0;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-end: 0;
+}
 
 .rating-btn {
 	background-color: var(--main-color);
@@ -5024,14 +5032,18 @@ html[dir="ltr"] .wait-order {
 	gap: 3px;
 }
 
-.rating-list li i {
+.star {
 	font-size: 36px;
 	color: #C5C5C5;
 }
-
-.rating-list li i.gold {
+.star:hover{
 	color: #F5A61D;
 }
+.star.selected{
+	color: #F5A61D;
+}
+  
+ 
 
 .mb-19 {
 	margin-bottom: 19px;
@@ -5353,7 +5365,12 @@ html[dir="ltr"] .wait-order {
 	.breadcrumb-sec {
 		padding: 20px 0 30px;
 	}
-
+	.total-record{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
 	.not-img {
 		display: none;
 	}

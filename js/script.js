@@ -35,6 +35,23 @@ $(".inputs").keyup(function () {
       $("html").removeClass("overflow");
   });
   
+  /////////////////////// rating ///////////////////////
+  const stars = document.querySelectorAll('.star');
+
+document.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('star')) {
+    let clicktargetReached = false;
+    for (const star of stars) {
+      star.classList[clicktargetReached ? 'remove' : 'add']('selected');
+      if (star === evt.target) {
+        clicktargetReached = true;
+      }
+    }
+    result.textContent = evt.target.dataset.rating;
+  }
+});
+
+
     ////////////////// filter in mobile //////////////////
     $('.filter-toggle').click(function(){
       $('.filter-section').toggleClass('active');
