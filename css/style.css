@@ -4475,6 +4475,11 @@ html[dir="ltr"] .cart-btn {
 	display: flex;
 	align-items: center;
 }
+.my-modal-btns{
+	display: flex;
+	align-items: center;
+	gap:5px;
+}
 
 .wallet-modal-btns .button-in-title-bar {
 	margin-inline-end: 5px;
@@ -5030,6 +5035,7 @@ width: max-content;
 	padding: 0;
 	margin-bottom: 21px;
 	gap: 3px;
+	cursor: pointer;
 }
 
 .star {
@@ -5370,6 +5376,15 @@ width: max-content;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
+	}
+	.total-order-info .total-record{
+		justify-content: space-between;
+       
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+	}
+	.total-order-info .total-record .total-answer{
+		justify-content: flex-end;
 	}
 	.not-img {
 		display: none;
