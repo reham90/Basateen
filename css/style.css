@@ -4729,8 +4729,94 @@ flex-shrink: 0;
 width: max-content;
 }
 
+.map-modal-btn-2{
+	background-color: transparent;
+	border: 0;
+	outline: none;
+	display: flex;
+	align-items: center;
+	padding: 0;
+}
+.map-modal-btn-2:hover{
+	color: var(--main-hover);
+}
+.map-modal-btn-2:hover i{
+	background-color: var(--main-color);
+	color: #fff;
+}
+.map-modal-btn-2:focus{
+	border: 0;
+	outline: none;
+}
 
-
+.accordion .accordion__title:has(input:checked) {
+    color: var(--main-color);
+    border-bottom: 0;
+    padding-bottom: 22px;
+}
+.accordion .accordion__title {
+    display: block;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    font-size: 18px;
+    font-family: "SST-ARABIC-MEDIUM";
+    padding: 30px 0;
+    color: #000;
+    display: flex;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    position: relative;
+    padding-inline-end: 20px;
+}
+.accordion .accordion__title input {
+    appearance: none;
+}
+.accordion .accordion__title:has(input:checked) .faq-number {
+    color: var(--main-color);
+}
+.faq-number {
+    font-size: 18px;
+    color: rgb(179, 179, 179);
+    display: flex;
+    margin-inline-end: 24px;
+}
+.accordion .accordion__title:has(input:checked):after {
+   
+	content:"";
+	font-family: "Line Awesome Free";
+    font-size: 24px;
+   
+    position: absolute;
+    inset-inline-end: 0;
+    color: var(--main-color);
+}
+.accordion .accordion__title:after {
+    content:"";
+	font-family: "Line Awesome Free";
+    font-size: 24px;
+    
+    position: absolute;
+    inset-inline-end: 0;
+    color: rgb(179, 179, 179);
+}
+.accordion .accordion__title:has(input:checked) + .accordion__text {
+    max-height: 200px;
+}
+.accordion .accordion__text {
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in-out;
+}
+.faq-answer {
+    padding: 0;
+    padding-inline-start: 47px;
+    color: #000;
+    font-size: 16px;
+   
+    line-height: 2;
+    text-align: justify;
+    padding-bottom: 15px;
+}
 .download {
 	color: #E13612;
 	font-size: 14px;
@@ -5371,6 +5457,23 @@ width: max-content;
 	.breadcrumb-sec {
 		padding: 20px 0 30px;
 	}
+	.accordion .accordion__title:has(input:checked) {
+        padding-bottom: 15px;
+    }
+	.accordion .accordion__title {
+        font-size: 16px;
+        padding-inline-end: 20px;
+    }
+	.faq-number {
+        margin-inline-end: 15px;
+    }
+	.faq-answer {
+        padding-inline-start: 36px;
+        padding-inline-end: 36px;
+    }
+	.accordion .accordion__title:has(input:checked) + .accordion__text {
+        max-height: 350px;
+    }
 	.total-record{
 		display: flex;
 		flex-direction: column;

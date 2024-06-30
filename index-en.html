@@ -22,6 +22,26 @@
          </div>
       </div>
       <!-- preloader -->
+        <!-- location modal -->
+                          
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+   <div class="modal-header my-modal-header">
+   
+   </div>
+   <div class="modal-content">
+   <div class="modal-header">
+     <h5 class="modal-title map-modal-title" id="mapModalLabel"> location on map  </h5>
+   
+   </div>
+   <div class="modal-body">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11200.675829730526!2d-75.6876061!3d45.42609535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament+Hill!5e0!3m2!1sen!2sca!4v1528808935681" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+   </div>
+   
+   </div>
+   </div>
+   </div>
+       <!-- location modal -->
       <!-- header section -->
       <header>
          <div class="top-header">
@@ -73,12 +93,12 @@
                      </a>
                   </li>
                   <li>
-                     <a href="#">
-                     <i class="las la-map-marker-alt top-header-list-icon"></i>
+                     <button type="button" class="modal-btn map-modal-btn-2" data-toggle="modal" data-target="#exampleModalLong">
+                        <i class="las la-map-marker-alt top-header-list-icon"></i>
                      <span class="top-header-list-text">
-                     My Location
+                    my location
                      </span>
-                     </a>
+                      </button>
                   </li>
                   <li>
                      <a href="#">
